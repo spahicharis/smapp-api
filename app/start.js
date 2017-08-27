@@ -68,6 +68,7 @@ const j = schedule.scheduleJob({hour: 7, minute: 0}, function () {
 
 
 app.set('superSecret', con.configParams.secret);
+app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({extended: false})); // support encoded bodies
 
@@ -140,6 +141,10 @@ if (typeof serverVariables.ipaddress === "undefined") {
     logger.info('No OPENSHIFT_NODEJS_IP const, using 127.0.0.1');
     serverVariables.ipaddress = "127.0.0.1";
 }
-app.listen(serverVariables.port, serverVariables.ipaddress, function () {
-    logger.info('SMAppi Node server started on ' + serverVariables.ipaddress + ':' + serverVariables.port);
+//app.listen(serverVariables.port, serverVariables.ipaddress, function () {
+//    logger.info('SMAppi Node server started on ' + serverVariables.ipaddress + ':' + serverVariables.port);
+//});
+
+app.listen(app.get('port'), function () {
+	logger.info('CZOO - Node app is running on port', app.get('port'), ' | MODE: ', env);
 });
