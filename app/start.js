@@ -18,7 +18,7 @@ const moment = require("moment");
 const mysqlDump = require('mysqldump');
 const helper = require('./utils/helper-functions');
 //const cors = require('cors');
-
+ 
 // Create the log directory if it does not exist
 if (!fs.existsSync(logDir)) {
     fs.mkdirSync(logDir);
@@ -68,7 +68,7 @@ const j = schedule.scheduleJob({hour: 7, minute: 0}, function () {
 
 
 app.set('superSecret', con.configParams.secret);
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 8081));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({extended: false})); // support encoded bodies
 
@@ -130,20 +130,6 @@ app.use(function (req, res, next) {
 //PROTECTED ROUTES
 require('./routes')(router, connection, mysql, logger);
 app.use(router);
-
-const serverVariables = {
-    ipaddress: process.env.OPENSHIFT_NODEJS_IP,
-    port: process.env.OPENSHIFT_NODEJS_PORT || 8081
-};
-if (typeof serverVariables.ipaddress === "undefined") {
-    //  Log errors on OpenShift but continue w/ 127.0.0.1 - this
-    //  allows us to run/test the app locally.
-    logger.info('No OPENSHIFT_NODEJS_IP const, using 127.0.0.1');
-    serverVariables.ipaddress = "127.0.0.1";
-}
-//app.listen(serverVariables.port, serverVariables.ipaddress, function () {
-//    logger.info('SMAppi Node server started on ' + serverVariables.ipaddress + ':' + serverVariables.port);
-//});
 
 app.listen(app.get('port'), function () {
 	logger.info('CZOO - Node app is running on port', app.get('port'), ' | MODE: ', env);

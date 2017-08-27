@@ -22,3 +22,8 @@
 {"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:08:33"}
 {"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:08:42"}
 {"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:08:42"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"11:41:48"}
+{"level":"info","message":"CZOO - Node app is running on port 5000  | MODE:  development","timestamp":"11:41:48"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"11:43:52"}
+{"level":"info","message":"CZOO - Node app is running on port 5000  | MODE:  development","timestamp":"11:43:52"}
+{"level":"info","message":"CZOO - Node app is running on port 8081  | MODE:  development","timestamp":"11:45:04"}
