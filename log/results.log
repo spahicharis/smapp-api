@@ -1,0 +1,24 @@
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:00:01"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:00:01"}
+{"level":"info","message":"Sending test push","timestamp":"14:02:03"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:04:36"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:04:36"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:04:44"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:04:44"}
+{"level":"info","message":"POST /artikli","timestamp":"14:05:00"}
+{"message":"Cannot read property 'info' of undefined","stack":"TypeError: Cannot read property 'info' of undefined\n    at Object.posaljiPush (D:\\My projects\\smapp\\smapp-api\\app\\utils\\helper-functions.js:22:11)\n    at Instance.<anonymous> (D:\\My projects\\smapp\\smapp-api\\app\\routes\\artikli.route.js:490:33)\n    at Instance.tryCatcher (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:512:31)\n    at Promise._settlePromise (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:569:18)\n    at Promise._settlePromise0 (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:614:10)\n    at Promise._settlePromises (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\promise.js:693:18)\n    at Async._drainQueue (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:133:16)\n    at Async._drainQueues (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:143:10)\n    at Immediate.Async.drainQueues (D:\\My projects\\smapp\\smapp-api\\node_modules\\sequelize\\node_modules\\bluebird\\js\\release\\async.js:17:14)\n    at runCallback (timers.js:781:20)\n    at tryOnImmediate (timers.js:743:5)\n    at processImmediate [as _immediateCallback] (timers.js:714:5)","level":"error","timestamp":"14:05:03"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:05:50"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:05:50"}
+{"level":"info","message":"POST /artikli","timestamp":"14:05:55"}
+{"level":"info","message":"Sending push","timestamp":"14:06:03"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:06:55"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:06:55"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:07:10"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:07:10"}
+{"level":"info","message":"POST /artikli","timestamp":"14:07:13"}
+{"level":"info","message":"Sending push","timestamp":"14:07:15"}
+{"Message":"Push sent to: d-LHn5Z9d5I:APA91bFTu2Zs3kNtlcazrChKAvBTtz5OHx17oUF3sgqVU0DO42OY0BI3l4HL5g8WDP3giPlI23HoopEmqbiz3pFV-BppGmtU6gj8FXXXw28WUTUs5qXNICh6w-rCUim5Ows4tiM9uuKY","level":"info","message":"","timestamp":"14:07:21"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:08:33"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:08:33"}
+{"level":"info","message":"No OPENSHIFT_NODEJS_IP const, using 127.0.0.1","timestamp":"14:08:42"}
+{"level":"info","message":"SMAppi Node server started on 127.0.0.1:8081","timestamp":"14:08:42"}

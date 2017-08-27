@@ -1,0 +1,1950 @@
+2016-12-28T21:03:24.413Z - info: GET /artikli
+2016-12-28T21:18:35.753Z - info: GET /statistika
+2016-12-28T21:44:27.510Z - info: GET /statistika
+2016-12-28T21:45:01.653Z - info: GET /statistika
+2016-12-28T21:56:51.612Z - info: GET /statistika
+2016-12-28T21:56:53.661Z - info: GET /statistika
+2016-12-28T21:57:37.714Z - info: GET /statistika
+2016-12-28T22:03:02.183Z - info: GET /statistika
+2016-12-28T22:05:55.498Z - info: GET /statistika
+2016-12-28T22:06:58.234Z - info: GET /statistika
+2016-12-28T22:07:26.562Z - info: GET /statistika
+2016-12-28T22:07:40.927Z - info: GET /statistika
+2016-12-28T22:07:42.188Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:08:28.579Z - info: GET /statistika
+2016-12-28T22:08:29.966Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:08:57.938Z - info: GET /statistika
+2016-12-28T22:08:59.316Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:10:50.673Z - info: GET /statistika
+2016-12-28T22:10:51.971Z - error:  SequelizeDatabaseError: ER_BAD_FIELD_ERROR: Unknown column 'prodaja.nacinpotraznje' in 'group statement'
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:11:08.493Z - info: GET /statistika
+2016-12-28T22:13:01.027Z - info: GET /statistika
+2016-12-28T22:14:04.985Z - info: GET /statistika
+2016-12-28T22:14:06.334Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:15:29.314Z - info: GET /statistika
+2016-12-28T22:15:29.332Z - error:  TypeError: s.replace is not a function
+    at Object.module.exports.removeTicks (C:\wamp\www\smappi\node_modules\sequelize\lib\utils.js:403:14)
+    at Object.module.exports.addTicks (C:\wamp\www\smappi\node_modules\sequelize\lib\utils.js:399:29)
+    at Object.QueryGenerator.quoteIdentifier (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query-generator.js:330:18)
+    at Object.QueryGenerator.quoteIdentifiers (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\abstract\query-generator.js:938:19)
+    at C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1085:82
+    at Array.map (native)
+    at Object.QueryGenerator.selectQuery (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1067:55)
+    at QueryInterface.select (C:\wamp\www\smappi\node_modules\sequelize\lib\query-interface.js:669:25)
+    at null.<anonymous> (C:\wamp\www\smappi\node_modules\sequelize\lib\model.js:1398:32)
+    at tryCatcher (C:\wamp\www\smappi\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smappi\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smappi\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smappi\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smappi\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smappi\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\wamp\www\smappi\node_modules\bluebird\js\release\async.js:143:10)
+2016-12-28T22:16:47.058Z - info: GET /statistika
+2016-12-28T22:16:48.354Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:18:33.064Z - info: GET /statistika
+2016-12-28T22:18:34.497Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:20:00.878Z - info: GET /statistika
+2016-12-28T22:20:02.213Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] AS `num` FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:20:27.903Z - info: GET /statistika
+2016-12-28T22:20:29.257Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] AS `num` FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:21:03.764Z - info: GET /statistika
+2016-12-28T22:21:05.118Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] AS `num` FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:21:54.840Z - info: GET /statistika
+2016-12-28T22:23:04.610Z - info: GET /statistika
+2016-12-28T22:23:06.006Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] AS `num` FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:25:02.337Z - info: GET /statistika
+2016-12-28T22:25:03.636Z - error:  SequelizeDatabaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '[object Object] AS `num` FROM `prodaja` AS `Artikal` GROUP BY `nacinpotraznje`' at line 1
+    at Query.formatError (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smappi\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smappi\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smappi\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:77:13)
+    at Socket.emit (events.js:169:7)
+    at readableAddChunk (_stream_readable.js:146:16)
+    at Socket.Readable.push (_stream_readable.js:110:10)
+    at TCP.onread (net.js:523:20)
+2016-12-28T22:26:11.346Z - info: GET /statistika
+2016-12-30T06:52:03.316Z - info: GET /artikli
+2016-12-30T18:21:09.198Z - info: GET /artikli
+2016-12-30T18:23:28.853Z - info: GET /artikli
+2016-12-30T18:26:47.631Z - info: GET /artikli
+2016-12-30T19:03:51.001Z - info: GET /artikli
+2016-12-30T19:04:02.457Z - info: GET /statistika
+2016-12-30T19:14:36.665Z - info: GET /statistika
+2016-12-30T19:41:31.569Z - info: GET /paketi
+2016-12-30T19:41:39.069Z - info: GET /artikli
+2017-01-01T22:33:32.126Z - info: GET /config/backup
+2017-01-01T22:34:18.536Z - info: GET /config/backup
+2017-01-01T22:34:19.241Z - error:  Error: ENOENT: no such file or directory, open 'C:\wamp\www\smappi\util\db_dump\data.sql'
+2017-01-01T22:35:10.346Z - info: GET /config/backup
+2017-01-01T22:36:22.330Z - info: GET /config/backup
+2017-01-01T22:36:22.980Z - error:  Error: ENOENT: no such file or directory, open 'C:\wamp\www\smappi\util\db_dump\data-Sun Jan 01 2017 23:36:22 GMT+0100 (Central European Standard Time).sql'
+2017-01-01T22:38:05.800Z - info: GET /config/backup
+2017-01-01T22:38:53.851Z - info: GET /config/backup
+2017-01-01T22:38:57.093Z - info: GET /config/backup
+2017-01-01T22:58:33.614Z - info: GET /statistika
+2017-01-01T22:58:33.747Z - info: GET /lastActivity/1/5
+2017-01-01T22:58:33.788Z - info: GET /artikli
+2017-01-01T22:58:35.681Z - info: GET /statistika
+2017-01-01T22:59:19.096Z - info: GET /statistika
+2017-01-01T22:59:20.759Z - info: GET /statistika
+2017-01-01T22:59:20.759Z - info: GET /lastActivity/1/5
+2017-01-01T22:59:20.775Z - info: GET /artikli
+2017-01-01T23:00:05.684Z - info: GET /statistika
+2017-01-01T23:03:09.235Z - info: GET /statistika
+2017-01-01T23:03:09.575Z - info: GET /statistika
+2017-01-01T23:03:09.580Z - info: GET /lastActivity/1/5
+2017-01-01T23:03:09.622Z - info: GET /artikli
+2017-01-01T23:03:14.378Z - info: GET /statistika
+2017-01-01T23:04:30.236Z - info: GET /statistika
+2017-01-01T23:04:30.490Z - info: GET /statistika
+2017-01-01T23:04:30.506Z - info: GET /lastActivity/1/5
+2017-01-01T23:04:30.520Z - info: GET /artikli
+2017-01-01T23:04:34.052Z - info: GET /statistika
+2017-01-01T23:13:15.303Z - info: GET /statistika
+2017-01-01T23:13:15.448Z - info: GET /statistika
+2017-01-01T23:13:15.455Z - info: GET /lastActivity/1/5
+2017-01-01T23:13:15.463Z - info: GET /artikli
+2017-01-01T23:13:19.311Z - info: GET /statistika
+2017-01-01T23:13:21.157Z - info: GET /config/backup
+2017-01-01T23:13:50.491Z - info: GET /config/backup
+2017-01-02T08:04:36.486Z - info: GET /statistika
+2017-01-02T08:04:38.351Z - info: GET /statistika
+2017-01-02T08:04:38.361Z - info: GET /lastActivity/1/5
+2017-01-02T08:04:38.381Z - info: GET /artikli
+2017-01-02T08:05:40.016Z - info: GET /statistika
+2017-01-02T08:05:40.480Z - info: GET /statistika
+2017-01-02T08:05:40.490Z - info: GET /lastActivity/1/5
+2017-01-02T08:05:40.505Z - info: GET /artikli
+2017-01-02T08:06:12.135Z - info: GET /statistika
+2017-01-02T08:06:17.386Z - info: GET /statistika
+2017-01-02T08:10:40.783Z - info: GET /statistika
+2017-01-02T08:10:51.455Z - info: GET /statistika
+2017-01-02T08:10:51.807Z - info: GET /statistika
+2017-01-02T08:10:51.819Z - info: GET /lastActivity/1/5
+2017-01-02T08:10:51.854Z - info: GET /artikli
+2017-01-02T08:10:55.092Z - info: GET /statistika
+2017-01-02T08:12:09.606Z - info: GET /statistika
+2017-01-02T08:12:17.834Z - info: GET /statistika
+2017-01-02T08:13:19.530Z - info: GET /statistika
+2017-01-02T08:16:34.291Z - info: GET /statistika
+2017-01-02T08:17:04.181Z - info: GET /paketi
+2017-01-02T08:17:07.764Z - info: GET /statistika
+2017-01-02T08:17:11.487Z - info: GET /statistika
+2017-01-02T08:17:18.135Z - info: GET /statistika
+2017-01-02T08:17:23.534Z - info: GET /statistika
+2017-01-02T08:17:27.753Z - info: GET /statistika
+2017-01-02T08:17:28.811Z - info: GET /paketi
+2017-01-02T08:17:32.894Z - info: GET /statistika
+2017-01-02T08:17:34.811Z - info: GET /statistika
+2017-01-02T08:17:34.823Z - info: GET /lastActivity/1/5
+2017-01-02T08:17:34.845Z - info: GET /artikli
+2017-01-02T08:20:05.336Z - info: GET /statistika
+2017-01-02T08:20:05.616Z - info: GET /statistika
+2017-01-02T08:20:05.638Z - info: GET /lastActivity/1/5
+2017-01-02T08:20:05.655Z - info: GET /artikli
+2017-01-02T08:20:50.798Z - info: GET /statistika
+2017-01-02T08:20:51.246Z - info: GET /statistika
+2017-01-02T08:20:51.294Z - info: GET /lastActivity/1/5
+2017-01-02T08:20:51.309Z - info: GET /artikli
+2017-01-02T08:23:03.303Z - info: GET /statistika
+2017-01-02T08:23:03.575Z - info: GET /statistika
+2017-01-02T08:23:03.587Z - info: GET /lastActivity/1/5
+2017-01-02T08:23:03.604Z - info: GET /artikli
+2017-01-02T08:24:16.745Z - info: GET /statistika
+2017-01-02T08:24:17.031Z - info: GET /statistika
+2017-01-02T08:24:17.084Z - info: GET /lastActivity/1/5
+2017-01-02T08:24:17.102Z - info: GET /artikli
+2017-01-02T08:24:43.590Z - info: GET /statistika
+2017-01-02T08:24:43.874Z - info: GET /statistika
+2017-01-02T08:24:43.882Z - info: GET /lastActivity/1/5
+2017-01-02T08:24:43.886Z - info: GET /artikli
+2017-01-02T08:25:15.770Z - info: GET /statistika
+2017-01-02T08:25:16.046Z - info: GET /statistika
+2017-01-02T08:25:16.057Z - info: GET /lastActivity/1/5
+2017-01-02T08:25:16.104Z - info: GET /artikli
+2017-01-02T08:25:47.071Z - info: GET /lastActivity/2/5
+2017-01-02T08:26:53.529Z - info: GET /statistika
+2017-01-02T08:26:53.831Z - info: GET /statistika
+2017-01-02T08:26:53.844Z - info: GET /lastActivity/1/5
+2017-01-02T08:26:53.859Z - info: GET /artikli
+2017-01-02T08:28:58.087Z - info: GET /statistika
+2017-01-02T08:29:00.420Z - info: GET /statistika
+2017-01-02T08:29:00.426Z - info: GET /lastActivity/1/5
+2017-01-02T08:29:00.439Z - info: GET /artikli
+2017-01-02T08:35:34.314Z - info: GET /statistika
+2017-01-02T08:35:34.584Z - info: GET /statistika
+2017-01-02T08:35:34.592Z - info: GET /lastActivity/1/5
+2017-01-02T08:35:34.604Z - info: GET /artikli
+2017-01-02T08:36:57.128Z - info: GET /statistika
+2017-01-02T08:36:57.408Z - info: GET /statistika
+2017-01-02T08:36:57.413Z - info: GET /lastActivity/1/5
+2017-01-02T08:36:57.417Z - info: GET /artikli
+2017-01-02T08:37:37.563Z - info: GET /statistika
+2017-01-02T08:37:37.823Z - info: GET /statistika
+2017-01-02T08:37:37.830Z - info: GET /lastActivity/1/5
+2017-01-02T08:37:37.841Z - info: GET /artikli
+2017-01-02T08:37:57.077Z - info: GET /lastActivity/2/5
+2017-01-02T08:38:42.884Z - info: GET /statistika
+2017-01-02T08:38:43.170Z - info: GET /statistika
+2017-01-02T08:38:43.200Z - info: GET /lastActivity/1/5
+2017-01-02T08:38:43.203Z - info: GET /artikli
+2017-01-02T08:38:57.233Z - info: GET /statistika
+2017-01-02T08:39:24.532Z - info: GET /statistika
+2017-01-02T08:39:24.808Z - info: GET /statistika
+2017-01-02T08:39:24.816Z - info: GET /lastActivity/1/5
+2017-01-02T08:39:24.858Z - info: GET /artikli
+2017-01-02T08:39:29.027Z - info: GET /statistika
+2017-01-02T08:42:11.594Z - info: GET /lastActivity/2/5
+2017-01-02T08:42:18.921Z - info: GET /artikli
+2017-01-02T08:42:18.929Z - info: GET /artikli/limit/1/10
+2017-01-02T08:42:26.477Z - info: GET /artikli
+2017-01-02T08:42:28.054Z - info: GET /artikli
+2017-01-02T08:42:28.057Z - info: GET /artikli/limit/1/10
+2017-01-02T08:42:29.321Z - info: GET /statistika
+2017-01-02T08:42:32.902Z - info: GET /statistika
+2017-01-02T08:42:32.915Z - info: GET /statistika
+2017-01-02T08:42:59.926Z - info: GET /statistika
+2017-01-02T08:43:00.502Z - info: GET /artikli
+2017-01-02T08:43:00.507Z - info: GET /artikli/limit/1/10
+2017-01-02T08:43:04.358Z - info: GET /statistika
+2017-01-08T14:05:27.865Z - info: GET /config/backup
+2017-01-16T19:46:11.070Z - info: GET /config/backup
+2017-01-16T19:51:39.083Z - info: GET /config/backup
+2017-01-25T07:15:45.295Z - info: GET /korisnici
+2017-01-25T07:17:31.958Z - info: GET /artikli
+2017-01-25T07:19:58.091Z - info: GET /korisnici
+2017-01-25T07:27:47.514Z - info: GET /korisnici
+2017-01-25T07:28:02.332Z - info: GET /korisnici
+2017-01-25T07:28:22.344Z - info: GET /korisnici
+2017-01-25T07:36:48.149Z - info: GET /config/backup
+2017-01-28T10:57:22.529Z - info: GET /paketi
+2017-01-28T13:28:37.685Z - info: GET /statistika
+2017-01-28T13:28:37.704Z - info: GET /statistika
+2017-01-28T13:28:37.711Z - info: GET /lastActivity/1/5
+2017-01-28T13:28:37.718Z - info: GET /artikli
+2017-01-28T13:34:52.380Z - info: GET /lastActivity/1/5
+2017-01-28T13:34:52.422Z - info: GET /artikli
+2017-01-28T13:35:11.009Z - info: GET /statistika
+2017-01-28T13:35:11.045Z - info: GET /statistika
+2017-01-28T13:36:08.027Z - info: GET /artikli/limit/1/10
+2017-01-28T13:36:18.790Z - info: GET /statistika
+2017-01-28T13:36:21.032Z - info: GET /paketi
+2017-01-28T13:36:22.642Z - info: GET /statistika
+2017-01-28T13:36:23.207Z - info: GET /statistika
+2017-01-28T13:36:23.225Z - info: GET /lastActivity/1/5
+2017-01-28T13:36:23.313Z - info: GET /artikli
+2017-01-28T13:36:26.903Z - info: GET /artikli
+2017-01-28T13:36:53.041Z - info: GET /statistika
+2017-01-28T13:36:57.094Z - info: GET /statistika
+2017-01-28T13:36:58.898Z - info: GET /statistika
+2017-01-28T13:36:58.903Z - info: GET /statistika
+2017-01-28T13:37:04.885Z - info: GET /statistika
+2017-01-28T13:37:05.484Z - info: GET /statistika
+2017-01-28T13:37:05.497Z - info: GET /lastActivity/1/5
+2017-01-28T13:37:05.501Z - info: GET /artikli
+2017-01-29T08:29:21.571Z - info: GET /statistika
+2017-01-29T08:29:21.579Z - info: GET /statistika
+2017-01-29T08:29:21.581Z - info: GET /lastActivity/1/5
+2017-01-29T08:29:21.600Z - info: GET /artikli
+2017-01-29T08:30:55.577Z - info: GET /statistika
+2017-01-29T08:31:06.609Z - info: GET /statistika
+2017-01-29T08:31:06.621Z - info: GET /lastActivity/1/5
+2017-01-29T08:31:06.630Z - info: GET /artikli
+2017-01-29T08:31:55.307Z - info: GET /statistika
+2017-01-29T08:31:59.122Z - info: GET /statistika
+2017-01-29T08:31:59.129Z - info: GET /lastActivity/1/5
+2017-01-29T08:31:59.134Z - info: GET /artikli
+2017-01-29T08:38:38.795Z - info: GET /statistika
+2017-01-29T08:38:43.843Z - info: GET /statistika
+2017-01-29T08:38:43.858Z - info: GET /lastActivity/1/5
+2017-01-29T08:38:43.868Z - info: GET /artikli
+2017-01-29T08:39:16.233Z - info: GET /statistika
+2017-01-29T08:39:25.828Z - info: GET /statistika
+2017-01-29T08:39:25.834Z - info: GET /lastActivity/1/5
+2017-01-29T08:39:25.837Z - info: GET /artikli
+2017-01-29T08:40:04.709Z - info: GET /artikli
+2017-01-29T08:40:04.718Z - info: GET /artikli/limit/1/10
+2017-01-29T08:41:16.582Z - info: GET /statistika
+2017-01-29T08:41:16.586Z - info: GET /statistika
+2017-01-29T08:41:16.592Z - info: GET /lastActivity/1/5
+2017-01-29T08:41:16.598Z - info: GET /artikli
+2017-01-29T11:15:23.391Z - info: GET /statistika
+2017-01-29T11:15:23.399Z - info: GET /statistika
+2017-01-29T11:15:23.402Z - info: GET /lastActivity/1/5
+2017-01-29T11:15:23.423Z - info: GET /artikli
+2017-01-29T11:16:46.141Z - info: GET /statistika
+2017-01-29T11:16:52.734Z - info: GET /statistika
+2017-01-29T11:16:52.740Z - info: GET /lastActivity/1/5
+2017-01-29T11:16:52.745Z - info: GET /artikli
+2017-01-29T11:17:08.198Z - info: GET /statistika
+2017-01-29T11:17:13.289Z - info: GET /statistika
+2017-01-29T11:17:13.293Z - info: GET /lastActivity/1/5
+2017-01-29T11:17:13.305Z - info: GET /artikli
+2017-01-29T11:17:34.887Z - info: GET /artikli
+2017-01-29T11:17:34.893Z - info: GET /artikli/limit/1/10
+2017-01-29T11:17:42.051Z - info: GET /statistika
+2017-01-29T11:17:43.119Z - info: GET /statistika
+2017-01-29T11:17:43.127Z - info: GET /lastActivity/1/5
+2017-01-29T11:17:43.141Z - info: GET /artikli
+2017-01-29T11:18:33.505Z - info: GET /statistika
+2017-01-29T11:18:33.516Z - info: GET /statistika
+2017-01-29T11:18:33.517Z - info: GET /lastActivity/1/5
+2017-01-29T11:18:33.537Z - info: GET /artikli
+2017-01-29T11:25:14.249Z - info: GET /artikli
+2017-01-29T11:25:14.255Z - info: GET /artikli/limit/1/10
+2017-01-29T11:25:46.249Z - info: POST /artikli
+2017-01-29T11:25:47.411Z - info: GET /artikli
+2017-01-29T11:25:47.415Z - info: GET /artikli/limit/1/10
+2017-01-29T11:25:51.615Z - info: GET /statistika
+2017-01-29T11:26:15.214Z - info: GET /statistika
+2017-01-29T11:26:16.336Z - info: GET /statistika
+2017-01-29T11:26:16.364Z - info: GET /lastActivity/1/5
+2017-01-29T11:26:16.373Z - info: GET /artikli
+2017-01-29T18:12:10.682Z - info: GET /poruke/NaN/NaN
+2017-01-29T18:12:11.446Z - error:  SequelizeBaseError: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.formatError (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+2017-01-29T18:12:58.354Z - info: GET /poruke/NaN/NaN
+2017-01-29T18:12:59.197Z - error:  SequelizeBaseError: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.formatError (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+2017-01-29T18:13:48.884Z - info: GET /poruke/0/5
+2017-01-29T18:13:50.349Z - error:  SequelizeBaseError: ER_BAD_FIELD_ERROR: Unknown column 'idporuka' in 'field list'
+    at Query.formatError (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+2017-01-29T18:14:08.902Z - info: GET /poruke/0/5
+2017-01-29T18:31:02.729Z - info: GET /statistika
+2017-01-29T18:31:02.743Z - info: GET /lastActivity/1/5
+2017-01-29T18:31:02.753Z - info: GET /artikli
+2017-01-29T18:31:06.562Z - info: GET /statistika
+2017-01-29T18:31:07.813Z - info: GET /poruke/1/1000
+2017-01-29T18:32:00.803Z - info: GET /statistika
+2017-01-29T18:32:00.837Z - info: GET /statistika
+2017-01-29T18:32:00.852Z - info: GET /lastActivity/1/5
+2017-01-29T18:32:00.866Z - info: GET /artikli
+2017-01-29T18:32:04.921Z - info: GET /statistika
+2017-01-29T18:32:06.125Z - info: GET /poruke/0/1000
+2017-01-29T18:33:22.261Z - info: GET /statistika
+2017-01-29T18:33:22.267Z - info: GET /statistika
+2017-01-29T18:33:22.273Z - info: GET /lastActivity/1/5
+2017-01-29T18:33:22.321Z - info: GET /artikli
+2017-01-29T18:35:23.428Z - info: GET /statistika
+2017-01-29T18:35:23.436Z - info: GET /statistika
+2017-01-29T18:35:23.440Z - info: GET /lastActivity/1/5
+2017-01-29T18:35:23.445Z - info: GET /artikli
+2017-01-29T18:35:26.082Z - info: GET /statistika
+2017-01-29T18:35:27.723Z - info: GET /poruke/0/1000
+2017-01-29T18:36:07.044Z - info: GET /statistika
+2017-01-29T18:36:07.095Z - info: GET /statistika
+2017-01-29T18:36:07.114Z - info: GET /lastActivity/1/5
+2017-01-29T18:36:07.120Z - info: GET /artikli
+2017-01-29T18:36:10.068Z - info: GET /statistika
+2017-01-29T18:36:11.745Z - info: GET /poruke/0/1000
+2017-01-29T18:36:53.352Z - info: GET /statistika
+2017-01-29T18:36:53.369Z - info: GET /statistika
+2017-01-29T18:36:53.372Z - info: GET /lastActivity/1/5
+2017-01-29T18:36:53.384Z - info: GET /artikli
+2017-01-29T18:38:09.056Z - info: GET /statistika
+2017-01-29T18:38:10.541Z - info: GET /poruke/0/1000
+2017-01-29T18:38:33.817Z - info: GET /statistika
+2017-01-29T18:38:33.922Z - info: GET /statistika
+2017-01-29T18:38:33.932Z - info: GET /lastActivity/1/5
+2017-01-29T18:38:33.941Z - info: GET /artikli
+2017-01-29T18:38:37.710Z - info: GET /statistika
+2017-01-29T18:38:39.632Z - info: GET /poruke/0/1000
+2017-01-29T18:39:45.464Z - info: GET /statistika
+2017-01-29T18:39:45.471Z - info: GET /statistika
+2017-01-29T18:39:45.480Z - info: GET /lastActivity/1/5
+2017-01-29T18:39:45.483Z - info: GET /artikli
+2017-01-29T18:39:52.374Z - info: GET /statistika
+2017-01-29T18:39:53.747Z - info: GET /poruke/0/1000
+2017-01-29T18:40:06.297Z - info: GET /statistika
+2017-01-29T18:40:08.011Z - info: GET /statistika
+2017-01-29T18:40:11.285Z - info: GET /statistika
+2017-01-29T18:40:58.640Z - info: GET /statistika
+2017-01-29T18:40:58.686Z - info: GET /statistika
+2017-01-29T18:40:58.689Z - info: GET /lastActivity/1/5
+2017-01-29T18:40:58.692Z - info: GET /artikli
+2017-01-29T18:41:01.040Z - info: GET /statistika
+2017-01-29T18:41:02.210Z - info: GET /poruke/0/1000
+2017-01-29T18:42:04.992Z - info: GET /statistika
+2017-01-29T18:42:05.010Z - info: GET /statistika
+2017-01-29T18:42:05.027Z - info: GET /lastActivity/1/5
+2017-01-29T18:42:05.036Z - info: GET /artikli
+2017-01-29T18:42:07.370Z - info: GET /statistika
+2017-01-29T18:42:08.089Z - info: GET /poruke/0/1000
+2017-01-29T18:42:37.930Z - info: GET /statistika
+2017-01-29T18:42:37.987Z - info: GET /lastActivity/1/5
+2017-01-29T18:42:38.000Z - info: GET /statistika
+2017-01-29T18:42:38.003Z - info: GET /artikli
+2017-01-29T18:42:40.242Z - info: GET /statistika
+2017-01-29T18:42:41.280Z - info: GET /poruke/0/1000
+2017-01-29T18:43:09.436Z - info: GET /statistika
+2017-01-29T18:43:09.443Z - info: GET /statistika
+2017-01-29T18:43:09.446Z - info: GET /lastActivity/1/5
+2017-01-29T18:43:09.450Z - info: GET /artikli
+2017-01-29T18:43:12.184Z - info: GET /statistika
+2017-01-29T18:43:13.015Z - info: GET /poruke/0/1000
+2017-01-29T18:43:35.181Z - info: GET /statistika
+2017-01-29T18:43:35.218Z - info: GET /statistika
+2017-01-29T18:43:35.223Z - info: GET /lastActivity/1/5
+2017-01-29T18:43:35.227Z - info: GET /artikli
+2017-01-29T18:43:38.142Z - info: GET /statistika
+2017-01-29T18:43:38.821Z - info: GET /poruke/0/1000
+2017-01-29T18:44:16.191Z - info: GET /statistika
+2017-01-29T18:44:17.020Z - info: GET /statistika
+2017-01-29T18:44:17.034Z - info: GET /lastActivity/1/5
+2017-01-29T18:44:17.054Z - info: GET /artikli
+2017-01-29T18:44:18.645Z - info: GET /statistika
+2017-01-29T18:44:19.447Z - info: GET /poruke/0/1000
+2017-01-29T18:46:08.524Z - info: GET /statistika
+2017-01-29T18:46:08.593Z - info: GET /statistika
+2017-01-29T18:46:08.596Z - info: GET /lastActivity/1/5
+2017-01-29T18:46:08.600Z - info: GET /artikli
+2017-01-29T18:46:12.574Z - info: GET /statistika
+2017-01-29T18:46:14.345Z - info: GET /poruke/0/1000
+2017-01-29T18:48:01.303Z - info: GET /statistika
+2017-01-29T18:48:01.308Z - info: GET /statistika
+2017-01-29T18:48:01.309Z - info: GET /lastActivity/1/5
+2017-01-29T18:48:01.314Z - info: GET /artikli
+2017-01-29T18:48:04.126Z - info: GET /statistika
+2017-01-29T18:48:05.714Z - info: GET /poruke/0/1000
+2017-01-29T18:49:44.419Z - info: GET /statistika
+2017-01-29T18:49:44.427Z - info: GET /statistika
+2017-01-29T18:49:44.431Z - info: GET /lastActivity/1/5
+2017-01-29T18:49:44.441Z - info: GET /artikli
+2017-01-29T18:49:54.198Z - info: GET /statistika
+2017-01-29T18:49:54.203Z - info: GET /statistika
+2017-01-29T18:49:54.213Z - info: GET /lastActivity/1/5
+2017-01-29T18:49:54.223Z - info: GET /artikli
+2017-01-29T18:49:57.088Z - info: GET /statistika
+2017-01-29T18:49:57.863Z - info: GET /poruke/0/1000
+2017-01-29T18:50:46.403Z - info: GET /statistika
+2017-01-29T18:50:46.408Z - info: GET /statistika
+2017-01-29T18:50:46.412Z - info: GET /lastActivity/1/5
+2017-01-29T18:50:46.421Z - info: GET /artikli
+2017-01-29T18:50:52.869Z - info: GET /statistika
+2017-01-29T18:50:53.859Z - info: GET /poruke/0/1000
+2017-01-29T18:53:27.024Z - info: GET /statistika
+2017-01-29T18:53:27.064Z - info: GET /statistika
+2017-01-29T18:53:27.075Z - info: GET /lastActivity/1/5
+2017-01-29T18:53:27.088Z - info: GET /artikli
+2017-01-29T18:53:29.910Z - info: GET /statistika
+2017-01-29T18:53:31.222Z - info: GET /poruke/0/1000
+2017-01-29T18:56:50.981Z - info: GET /statistika
+2017-01-29T18:56:50.986Z - info: GET /lastActivity/1/5
+2017-01-29T18:56:50.990Z - info: GET /artikli
+2017-01-29T18:56:52.612Z - info: GET /statistika
+2017-01-29T18:57:00.295Z - info: GET /statistika
+2017-01-29T18:57:01.654Z - info: GET /poruke/0/1000
+2017-01-29T18:58:33.121Z - info: GET /statistika
+2017-01-29T19:07:12.979Z - info: GET /statistika
+2017-01-29T19:07:12.986Z - info: GET /statistika
+2017-01-29T19:07:12.991Z - info: GET /lastActivity/1/5
+2017-01-29T19:07:12.996Z - info: GET /artikli
+2017-01-29T19:07:16.444Z - info: GET /statistika
+2017-01-29T19:07:53.170Z - info: GET /statistika
+2017-01-29T19:07:53.249Z - info: GET /statistika
+2017-01-29T19:07:53.265Z - info: GET /lastActivity/1/5
+2017-01-29T19:07:53.269Z - info: GET /artikli
+2017-01-29T19:08:55.446Z - info: GET /statistika
+2017-01-29T19:08:56.173Z - info: GET /poruke/0/1000
+2017-01-29T19:09:40.003Z - info: GET /statistika
+2017-01-29T19:09:40.009Z - info: GET /statistika
+2017-01-29T19:09:40.012Z - info: GET /lastActivity/1/5
+2017-01-29T19:09:40.013Z - info: GET /artikli
+2017-01-29T19:09:44.148Z - info: GET /statistika
+2017-01-29T19:09:45.752Z - info: GET /poruke/0/1000
+2017-01-29T19:09:50.663Z - info: POST /poruke
+2017-01-29T19:09:50.859Z - info: GET /poruke/1/1000
+2017-01-29T19:10:04.785Z - info: GET /statistika
+2017-01-29T19:10:07.121Z - info: GET /poruke/0/1000
+2017-01-29T19:10:21.774Z - info: POST /poruke
+2017-01-29T19:10:22.615Z - info: GET /poruke/1/1000
+2017-01-29T19:11:03.403Z - info: GET /statistika
+2017-01-29T19:11:03.869Z - info: GET /statistika
+2017-01-29T19:11:03.873Z - info: GET /lastActivity/1/5
+2017-01-29T19:11:03.881Z - info: GET /artikli
+2017-01-29T19:11:05.193Z - info: GET /statistika
+2017-01-29T19:11:05.859Z - info: GET /poruke/0/1000
+2017-01-29T19:11:58.246Z - info: GET /statistika
+2017-01-29T19:12:01.099Z - info: GET /poruke/0/1000
+2017-01-29T19:12:05.488Z - info: POST /poruke
+2017-01-29T19:12:05.698Z - info: GET /poruke/1/1000
+2017-01-29T19:12:15.241Z - info: GET /statistika
+2017-01-29T19:12:15.868Z - info: GET /statistika
+2017-01-29T19:12:15.878Z - info: GET /lastActivity/1/5
+2017-01-29T19:12:15.890Z - info: GET /artikli
+2017-01-29T19:12:23.769Z - info: POST /poruke
+2017-01-29T19:12:23.944Z - info: GET /poruke/2/1000
+2017-01-29T19:13:21.550Z - info: GET /statistika
+2017-01-29T19:13:21.554Z - info: GET /statistika
+2017-01-29T19:13:21.556Z - info: GET /lastActivity/1/5
+2017-01-29T19:13:21.570Z - info: GET /artikli
+2017-01-29T19:13:25.668Z - info: GET /statistika
+2017-01-29T19:13:26.476Z - info: GET /poruke/0/1000
+2017-01-29T19:13:30.201Z - info: POST /poruke
+2017-01-29T19:13:30.381Z - info: GET /poruke/1/1000
+2017-01-29T19:13:33.028Z - info: POST /poruke
+2017-01-29T19:13:33.228Z - info: GET /poruke/2/1000
+2017-01-29T19:13:36.498Z - info: POST /poruke
+2017-01-29T19:13:36.697Z - info: GET /poruke/3/1000
+2017-01-29T19:13:42.357Z - info: POST /poruke
+2017-01-29T19:13:42.573Z - info: GET /poruke/4/1000
+2017-01-29T19:17:08.816Z - info: GET /statistika
+2017-01-29T19:17:08.826Z - info: GET /statistika
+2017-01-29T19:17:08.830Z - info: GET /lastActivity/1/5
+2017-01-29T19:17:08.848Z - info: GET /artikli
+2017-01-29T19:17:11.727Z - info: GET /statistika
+2017-01-29T19:17:12.797Z - info: GET /poruke/0/1000
+2017-01-29T19:23:43.936Z - info: GET /statistika
+2017-01-29T19:23:43.947Z - info: GET /lastActivity/1/5
+2017-01-29T19:23:43.955Z - info: GET /artikli
+2017-01-29T19:23:46.549Z - info: GET /statistika
+2017-01-29T19:23:51.570Z - info: GET /poruke/0/1000
+2017-01-29T19:23:54.564Z - info: DELETE /poruke
+2017-01-29T19:23:54.731Z - info: GET /poruke/1/1000
+2017-01-29T19:23:58.570Z - info: DELETE /poruke
+2017-01-29T19:23:58.734Z - info: GET /poruke/2/1000
+2017-01-29T19:24:51.286Z - info: GET /statistika
+2017-01-29T19:24:51.293Z - info: GET /statistika
+2017-01-29T19:24:51.301Z - info: GET /lastActivity/1/5
+2017-01-29T19:24:51.316Z - info: GET /artikli
+2017-01-29T19:24:56.474Z - info: GET /statistika
+2017-01-29T19:24:57.139Z - info: GET /poruke/0/1000
+2017-01-29T19:25:00.599Z - info: DELETE /poruke
+2017-01-29T19:25:00.780Z - info: GET /poruke/1/1000
+2017-01-29T19:25:06.541Z - info: DELETE /poruke
+2017-01-29T19:25:06.741Z - info: GET /poruke/2/1000
+2017-01-29T19:25:43.117Z - info: GET /statistika
+2017-01-29T19:25:43.740Z - info: GET /poruke/0/1000
+2017-01-29T19:26:25.049Z - info: GET /statistika
+2017-01-29T19:26:25.088Z - info: GET /statistika
+2017-01-29T19:26:25.118Z - info: GET /lastActivity/1/5
+2017-01-29T19:26:25.131Z - info: GET /artikli
+2017-01-29T19:26:27.912Z - info: GET /statistika
+2017-01-29T19:26:28.952Z - info: GET /poruke/0/1000
+2017-01-29T19:26:31.333Z - info: DELETE /poruke
+2017-01-29T19:26:31.521Z - info: GET /poruke/0/1000
+2017-01-29T19:26:34.012Z - info: DELETE /poruke
+2017-01-29T19:26:34.201Z - info: GET /poruke/0/1000
+2017-01-29T19:26:36.700Z - info: DELETE /poruke
+2017-01-29T19:26:36.963Z - info: GET /poruke/0/1000
+2017-01-29T19:26:41.532Z - info: POST /poruke
+2017-01-29T19:26:41.723Z - info: GET /poruke/0/1000
+2017-01-29T19:26:44.390Z - info: DELETE /poruke
+2017-01-29T19:26:44.554Z - info: GET /poruke/0/1000
+2017-01-29T19:27:17.547Z - info: GET /statistika
+2017-01-29T19:27:24.966Z - info: GET /statistika
+2017-01-29T19:27:24.973Z - info: GET /lastActivity/1/5
+2017-01-29T19:27:24.987Z - info: GET /artikli
+2017-01-29T19:27:45.986Z - info: GET /statistika
+2017-01-29T19:29:34.511Z - info: GET /statistika
+2017-01-29T19:29:34.639Z - info: GET /statistika
+2017-01-29T19:29:34.645Z - info: GET /lastActivity/1/5
+2017-01-29T19:29:34.910Z - info: GET /artikli
+2017-01-29T19:32:12.542Z - info: GET /statistika
+2017-01-29T19:32:12.551Z - info: GET /statistika
+2017-01-29T19:32:12.556Z - info: GET /lastActivity/1/5
+2017-01-29T19:32:12.562Z - info: GET /artikli
+2017-01-29T19:32:14.777Z - info: GET /statistika
+2017-01-29T19:32:20.915Z - info: GET /poruke/0/1000
+2017-01-29T19:32:25.083Z - info: GET /statistika
+2017-01-29T19:32:25.897Z - info: GET /artikli
+2017-01-29T19:32:25.906Z - info: GET /artikli/limit/1/10
+2017-01-29T19:32:30.348Z - info: GET /statistika
+2017-01-29T19:32:31.203Z - info: GET /poruke/0/1000
+2017-01-29T19:32:33.822Z - info: DELETE /poruke
+2017-01-29T19:32:34.008Z - info: GET /poruke/0/1000
+2017-01-29T19:32:39.658Z - info: GET /statistika
+2017-01-29T19:32:40.421Z - info: GET /statistika
+2017-01-29T19:32:40.428Z - info: GET /lastActivity/1/5
+2017-01-29T19:32:40.434Z - info: GET /artikli
+2017-01-29T20:10:33.399Z - info: GET /statistika
+2017-01-29T20:10:33.411Z - info: GET /lastActivity/1/5
+2017-01-29T20:10:33.430Z - info: GET /artikli
+2017-01-29T20:11:26.203Z - info: GET /lastActivity/2/5
+2017-01-29T20:11:45.967Z - info: GET /lastActivity/3/5
+2017-01-29T20:28:56.566Z - info: GET /statistika
+2017-01-29T20:28:56.615Z - info: GET /statistika
+2017-01-29T20:28:56.631Z - info: GET /lastActivity/1/5
+2017-01-29T20:28:56.660Z - info: GET /artikli
+2017-01-29T20:30:06.285Z - info: GET /lastActivity/2/5
+2017-01-29T20:30:08.818Z - info: GET /statistika
+2017-01-29T20:32:01.944Z - info: GET /statistika
+2017-01-29T20:32:02.020Z - info: GET /statistika
+2017-01-29T20:32:02.047Z - info: GET /lastActivity/1/5
+2017-01-29T20:32:02.062Z - info: GET /artikli
+2017-01-29T20:32:06.442Z - info: GET /statistika
+2017-01-29T20:32:07.680Z - info: GET /poruke/0/1000
+2017-01-29T20:32:10.313Z - info: GET /statistika
+2017-01-29T20:32:11.098Z - info: GET /statistika
+2017-01-29T20:32:11.106Z - info: GET /lastActivity/1/5
+2017-01-29T20:32:11.116Z - info: GET /artikli
+2017-01-29T20:32:14.625Z - info: GET /artikli
+2017-01-29T20:32:14.638Z - info: GET /artikli/limit/1/10
+2017-01-29T20:32:18.224Z - info: GET /statistika
+2017-01-29T20:32:18.655Z - info: GET /statistika
+2017-01-29T20:32:18.656Z - info: GET /lastActivity/1/5
+2017-01-29T20:32:18.666Z - info: GET /artikli
+2017-01-29T20:32:20.895Z - info: GET /statistika
+2017-01-29T20:32:21.624Z - info: GET /statistika
+2017-01-29T20:32:21.629Z - info: GET /lastActivity/1/5
+2017-01-29T20:32:21.640Z - info: GET /artikli
+2017-01-29T20:32:35.565Z - info: GET /statistika
+2017-01-29T20:32:38.719Z - info: GET /statistika
+2017-01-29T20:32:38.728Z - info: GET /lastActivity/1/5
+2017-01-29T20:32:38.734Z - info: GET /artikli
+2017-01-29T20:32:40.706Z - info: GET /statistika
+2017-01-29T20:32:41.723Z - info: GET /statistika
+2017-01-29T20:32:41.727Z - info: GET /lastActivity/1/5
+2017-01-29T20:32:41.733Z - info: GET /artikli
+2017-01-29T20:33:23.081Z - info: GET /statistika
+2017-01-29T20:33:32.069Z - info: GET /statistika
+2017-01-29T20:33:32.073Z - info: GET /lastActivity/1/5
+2017-01-29T20:33:32.091Z - info: GET /artikli
+2017-01-29T20:33:34.414Z - info: GET /statistika
+2017-01-29T20:34:20.894Z - info: GET /statistika
+2017-01-29T20:34:20.987Z - info: GET /statistika
+2017-01-29T20:34:20.992Z - info: GET /lastActivity/1/5
+2017-01-29T20:34:21.059Z - info: GET /artikli
+2017-01-29T20:34:26.421Z - info: GET /statistika
+2017-01-29T20:36:05.888Z - info: GET /statistika
+2017-01-29T20:36:05.969Z - info: GET /statistika
+2017-01-29T20:36:05.974Z - info: GET /lastActivity/1/5
+2017-01-29T20:36:05.992Z - info: GET /artikli
+2017-01-30T19:10:42.349Z - info: GET /paketi
+2017-01-30T19:11:33.356Z - info: GET /artikli
+2017-01-30T19:12:05.944Z - info: GET /artikli
+2017-01-30T19:12:15.716Z - info: GET /artikli
+2017-01-30T19:12:50.252Z - info: GET /artikli
+2017-01-30T19:13:05.322Z - info: GET /artikli
+2017-01-30T19:13:20.598Z - info: GET /artikli
+2017-01-30T19:30:43.695Z - info: GET /artikli
+2017-01-30T19:30:45.248Z - error:  TypeError: Cannot read property 'forEach' of undefined
+    at Model.<anonymous> (C:\wamp\www\smapp\smapp-api\routes\artikli.push.route.js:89:29)
+    at Model.tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-01-30T19:31:11.992Z - info: GET /artikli
+2017-01-30T19:31:13.501Z - error:  TypeError: Cannot read property 'forEach' of undefined
+    at Model.<anonymous> (C:\wamp\www\smapp\smapp-api\routes\artikli.push.route.js:90:29)
+    at Model.tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-01-30T19:31:55.817Z - info: GET /artikli
+2017-01-30T19:32:12.546Z - info: GET /artikli
+2017-01-30T19:49:35.734Z - info: GET /artikli
+2017-01-30T19:49:37.426Z - info: GET /paketi
+2017-01-30T19:49:43.978Z - info: GET /artikli
+2017-01-30T19:49:51.713Z - info: GET /artikli
+2017-01-30T19:50:34.198Z - info: GET /artikli
+2017-01-30T19:50:35.076Z - info: GET /paketi
+2017-01-30T19:50:38.809Z - info: GET /artikli
+2017-01-30T19:50:41.759Z - info: GET /artikli
+2017-01-30T19:50:42.771Z - info: GET /artikli
+2017-01-30T19:50:44.351Z - info: GET /artikli
+2017-01-30T19:50:45.575Z - info: GET /artikli
+2017-01-30T19:50:47.177Z - info: GET /artikli
+2017-01-30T19:50:48.503Z - info: GET /artikli
+2017-01-30T19:50:49.717Z - info: GET /artikli
+2017-01-30T19:51:06.442Z - info: GET /artikli
+2017-01-30T19:51:08.178Z - info: GET /artikli
+2017-01-30T19:51:08.967Z - info: GET /artikli
+2017-01-30T19:51:09.750Z - info: GET /artikli
+2017-01-30T19:51:17.028Z - info: GET /artikli
+2017-01-30T19:51:19.274Z - info: GET /artikli
+2017-01-30T19:51:22.650Z - info: GET /artikli
+2017-01-30T19:51:22.884Z - info: GET /artikli
+2017-01-30T19:51:23.081Z - info: GET /artikli
+2017-01-30T19:51:24.163Z - info: GET /artikli
+2017-01-30T19:51:24.390Z - info: GET /artikli
+2017-01-30T19:51:24.601Z - info: GET /artikli
+2017-01-30T19:52:19.215Z - info: GET /artikli
+2017-01-30T19:52:20.134Z - info: GET /paketi
+2017-01-30T19:53:48.206Z - info: GET /artikli
+2017-01-30T19:53:49.197Z - info: GET /paketi
+2017-01-30T19:53:55.036Z - info: GET /artikli
+2017-01-30T19:53:59.190Z - info: GET /artikli
+2017-01-30T19:54:00.564Z - info: GET /artikli
+2017-01-30T19:54:01.190Z - info: GET /artikli
+2017-01-30T19:54:01.906Z - info: GET /artikli
+2017-01-30T19:54:02.172Z - info: GET /artikli
+2017-01-30T19:54:02.367Z - info: GET /artikli
+2017-01-30T19:54:02.902Z - info: GET /artikli
+2017-01-30T19:54:03.060Z - info: GET /artikli
+2017-01-30T19:54:03.248Z - info: GET /artikli
+2017-01-30T19:54:05.396Z - info: GET /artikli
+2017-01-30T19:54:07.442Z - info: GET /artikli
+2017-01-30T19:54:07.773Z - info: GET /artikli
+2017-01-30T19:54:08.168Z - info: GET /artikli
+2017-01-30T19:54:08.376Z - info: GET /artikli
+2017-01-30T19:54:08.575Z - info: GET /artikli
+2017-01-30T19:54:09.258Z - info: GET /artikli
+2017-01-30T19:54:09.699Z - info: GET /artikli
+2017-01-30T19:54:10.004Z - info: GET /artikli
+2017-01-30T19:54:10.321Z - info: GET /artikli
+2017-01-30T19:54:10.560Z - info: GET /artikli
+2017-01-30T20:00:46.687Z - info: GET /artikli
+2017-01-30T20:00:47.614Z - info: GET /paketi
+2017-01-30T20:00:51.168Z - info: GET /artikli
+2017-01-30T20:00:52.918Z - info: GET /artikli
+2017-01-30T20:00:59.619Z - info: GET /artikli
+2017-01-30T20:01:00.788Z - info: GET /artikli
+2017-01-30T20:18:30.773Z - info: GET /artikli
+2017-01-30T20:18:31.683Z - info: GET /paketi
+2017-01-30T20:18:36.988Z - info: GET /artikli
+2017-01-30T20:18:42.726Z - info: GET /artikli
+2017-01-30T20:37:03.528Z - info: GET /artikli
+2017-01-30T20:37:04.468Z - info: GET /paketi
+2017-01-30T20:37:08.177Z - info: GET /artikli
+2017-01-30T20:37:12.152Z - info: GET /artikli
+2017-01-30T20:37:14.175Z - info: GET /artikli
+2017-01-30T20:37:15.175Z - info: GET /artikli
+2017-01-30T20:37:17.138Z - info: GET /artikli
+2017-01-30T20:37:18.553Z - info: GET /artikli
+2017-01-30T20:37:23.746Z - info: GET /artikli
+2017-01-30T20:38:10.119Z - info: GET /artikli
+2017-01-30T20:38:11.066Z - info: GET /paketi
+2017-01-30T20:38:29.265Z - info: GET /artikli
+2017-01-30T20:39:00.639Z - info: GET /artikli
+2017-01-30T20:39:25.288Z - info: GET /artikli
+2017-01-30T20:39:52.715Z - info: GET /artikli
+2017-01-30T20:40:02.906Z - info: GET /artikli
+2017-01-30T20:40:06.272Z - info: GET /artikli
+2017-01-30T20:41:18.333Z - info: GET /artikli
+2017-01-30T20:41:19.286Z - info: GET /paketi
+2017-01-30T20:41:22.391Z - info: GET /artikli
+2017-01-30T20:41:25.244Z - info: GET /artikli
+2017-01-30T20:41:26.339Z - info: GET /artikli
+2017-01-30T20:41:27.996Z - info: GET /artikli
+2017-01-30T20:41:30.132Z - info: GET /artikli
+2017-01-30T20:41:33.129Z - info: GET /artikli
+2017-01-30T20:41:44.990Z - info: GET /artikli
+2017-01-30T20:41:50.381Z - info: GET /artikli
+2017-01-30T20:42:29.396Z - info: GET /artikli
+2017-01-30T20:42:30.351Z - info: GET /paketi
+2017-01-30T20:42:36.868Z - info: GET /artikli
+2017-01-30T20:42:42.956Z - info: GET /artikli
+2017-01-30T20:42:46.793Z - info: GET /artikli
+2017-01-30T20:43:26.436Z - info: GET /artikli
+2017-01-30T20:44:54.476Z - info: GET /artikli
+2017-01-30T20:44:55.423Z - info: GET /paketi
+2017-01-30T20:44:58.149Z - info: GET /artikli
+2017-01-30T20:44:59.265Z - info: GET /artikli
+2017-01-30T20:45:00.314Z - info: GET /artikli
+2017-01-30T20:45:01.603Z - info: GET /artikli
+2017-01-30T20:45:02.617Z - info: GET /artikli
+2017-01-30T20:45:18.955Z - info: GET /artikli
+2017-01-30T20:45:30.194Z - info: GET /artikli
+2017-01-30T20:46:03.480Z - info: GET /artikli
+2017-01-30T20:46:04.328Z - info: GET /paketi
+2017-01-30T20:46:10.547Z - info: GET /artikli
+2017-01-30T20:46:11.856Z - info: GET /artikli
+2017-01-30T20:46:15.105Z - info: GET /artikli
+2017-01-30T20:46:16.264Z - info: GET /artikli
+2017-01-30T20:46:17.523Z - info: GET /artikli
+2017-01-30T20:47:02.915Z - info: GET /artikli
+2017-01-30T20:47:03.823Z - info: GET /paketi
+2017-01-30T20:47:07.330Z - info: GET /artikli
+2017-01-30T20:47:13.379Z - info: GET /artikli
+2017-01-30T20:47:14.798Z - info: GET /artikli
+2017-01-30T20:47:19.144Z - info: GET /artikli
+2017-01-30T20:47:20.767Z - info: GET /artikli
+2017-01-30T20:47:41.983Z - info: GET /artikli
+2017-01-30T20:51:44.693Z - info: GET /artikli
+2017-01-30T20:51:46.172Z - error:  SequelizeBaseError: ER_SP_UNDECLARED_VAR: Undeclared variable: NaN
+    at Query.formatError (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+2017-01-30T20:52:58.242Z - info: GET /artikli
+2017-01-30T20:52:59.884Z - info: GET /paketi
+2017-01-30T20:53:03.390Z - info: GET /artikli
+2017-01-30T20:53:05.571Z - info: GET /artikli
+2017-01-30T20:53:05.719Z - error:  SequelizeBaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-2, 2' at line 1
+    at Query.formatError (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+2017-01-30T20:53:56.786Z - info: GET /artikli
+2017-01-30T20:53:57.715Z - info: GET /paketi
+2017-01-30T20:54:01.604Z - info: GET /artikli
+2017-01-30T20:54:02.349Z - info: GET /artikli
+2017-01-30T20:54:03.470Z - info: GET /artikli
+2017-01-30T20:55:59.983Z - info: GET /artikli
+2017-01-30T20:56:00.898Z - info: GET /paketi
+2017-01-30T20:56:03.579Z - info: GET /artikli
+2017-01-30T20:56:04.897Z - info: GET /artikli
+2017-01-30T20:56:53.840Z - info: GET /artikli
+2017-01-30T20:56:54.671Z - info: GET /paketi
+2017-01-30T20:56:57.401Z - info: GET /artikli
+2017-01-30T20:57:00.086Z - info: GET /artikli
+2017-01-30T20:57:01.137Z - info: GET /artikli
+2017-01-30T20:57:03.780Z - info: GET /artikli
+2017-01-30T21:01:19.128Z - info: GET /artikli
+2017-01-30T21:01:20.056Z - info: GET /paketi
+2017-01-30T21:01:33.159Z - info: GET /artikli
+2017-01-30T21:01:36.524Z - info: GET /artikli
+2017-01-30T21:02:41.180Z - info: GET /artikli
+2017-01-30T21:02:42.067Z - info: GET /paketi
+2017-01-30T21:02:46.562Z - info: GET /artikli
+2017-01-30T21:02:46.759Z - info: GET /artikli
+2017-01-30T21:02:46.905Z - info: GET /artikli
+2017-01-30T21:02:48.086Z - info: GET /artikli
+2017-01-30T21:02:48.330Z - info: GET /artikli
+2017-01-30T21:02:48.543Z - info: GET /artikli
+2017-01-30T21:02:50.804Z - info: GET /artikli
+2017-01-30T21:02:53.134Z - info: GET /artikli
+2017-01-30T21:02:55.319Z - info: GET /artikli
+2017-01-30T21:02:57.718Z - info: GET /artikli
+2017-01-30T21:03:02.363Z - info: GET /artikli
+2017-01-30T21:03:04.036Z - info: GET /artikli
+2017-01-30T21:03:06.906Z - info: GET /artikli
+2017-01-30T21:03:07.532Z - info: GET /artikli
+2017-01-30T21:03:08.295Z - info: GET /artikli
+2017-01-30T21:03:09.611Z - info: GET /artikli
+2017-01-30T21:03:11.115Z - info: GET /artikli
+2017-01-30T21:03:13.269Z - info: GET /artikli
+2017-01-30T21:03:18.662Z - info: GET /artikli
+2017-01-30T21:03:18.971Z - info: GET /artikli
+2017-01-30T21:03:19.212Z - info: GET /artikli
+2017-01-30T21:03:19.434Z - info: GET /artikli
+2017-01-30T21:03:19.656Z - info: GET /artikli
+2017-01-30T21:03:21.713Z - info: GET /artikli
+2017-01-30T21:03:23.869Z - info: GET /artikli
+2017-01-30T21:03:25.539Z - info: GET /artikli
+2017-01-30T21:03:29.141Z - info: GET /artikli
+2017-01-30T21:04:38.838Z - info: GET /statistika
+2017-01-30T21:11:05.630Z - info: GET /artikli
+2017-01-30T21:11:06.594Z - info: GET /paketi
+2017-01-30T21:11:06.929Z - info: GET /statistika
+2017-01-30T21:11:45.905Z - info: GET /artikli
+2017-01-30T21:11:58.829Z - info: GET /statistika
+2017-01-30T21:14:21.693Z - info: GET /artikli
+2017-01-30T21:14:22.593Z - info: GET /paketi
+2017-01-30T21:14:22.931Z - info: GET /statistika
+2017-01-31T07:28:36.236Z - info: GET /artikli
+2017-01-31T07:28:37.981Z - info: GET /paketi
+2017-01-31T07:29:00.664Z - info: GET /artikli
+2017-01-31T07:29:03.664Z - info: GET /artikli
+2017-01-31T07:29:33.968Z - info: GET /artikli
+2017-01-31T07:29:34.832Z - info: GET /paketi
+2017-01-31T07:30:05.601Z - info: GET /artikli
+2017-01-31T07:30:06.543Z - info: GET /paketi
+2017-01-31T07:30:48.356Z - info: GET /artikli
+2017-01-31T07:30:49.223Z - info: GET /paketi
+2017-01-31T07:31:51.609Z - info: GET /artikli
+2017-01-31T07:31:52.503Z - info: GET /paketi
+2017-01-31T07:31:52.851Z - info: GET /lastActivity/1/20
+2017-01-31T07:32:43.698Z - info: GET /artikli
+2017-01-31T07:32:44.492Z - info: GET /paketi
+2017-01-31T07:32:44.823Z - info: GET /lastActivity/1/20
+2017-01-31T07:36:29.140Z - info: GET /artikli
+2017-01-31T07:36:30.104Z - info: GET /paketi
+2017-01-31T07:36:30.441Z - info: GET /lastActivity/1/20
+2017-01-31T07:37:12.908Z - info: GET /artikli
+2017-01-31T07:37:13.775Z - info: GET /paketi
+2017-01-31T07:37:14.137Z - info: GET /lastActivity/1/20
+2017-01-31T07:37:29.810Z - info: GET /artikli
+2017-01-31T07:37:31.665Z - info: GET /artikli
+2017-01-31T07:46:15.198Z - info: GET /artikli
+2017-01-31T07:46:16.125Z - info: GET /paketi
+2017-01-31T07:46:16.464Z - info: GET /lastActivity/1/20
+2017-01-31T07:49:53.322Z - info: GET /artikli
+2017-01-31T07:49:54.243Z - info: GET /paketi
+2017-01-31T07:49:54.567Z - info: GET /lastActivity/1/20
+2017-01-31T07:50:00.024Z - info: POST /artikli
+2017-01-31T07:51:57.087Z - info: GET /artikli
+2017-01-31T07:51:58.098Z - info: GET /paketi
+2017-01-31T07:51:58.427Z - info: GET /lastActivity/1/20
+2017-01-31T07:52:04.487Z - info: POST /artikli
+2017-01-31T08:00:43.332Z - info: GET /artikli
+2017-01-31T08:00:44.273Z - info: GET /paketi
+2017-01-31T08:00:44.620Z - info: GET /lastActivity/1/20
+2017-01-31T08:01:40.799Z - info: GET /artikli
+2017-01-31T08:01:41.688Z - info: GET /paketi
+2017-01-31T08:01:42.013Z - info: GET /lastActivity/1/20
+2017-01-31T08:02:31.240Z - info: GET /artikli
+2017-01-31T08:02:32.177Z - info: GET /paketi
+2017-01-31T08:02:32.565Z - info: GET /lastActivity/1/20
+2017-01-31T08:39:19.357Z - info: GET /artikli
+2017-01-31T08:39:20.293Z - info: GET /paketi
+2017-01-31T08:39:20.626Z - info: GET /lastActivity/1/20
+2017-01-31T08:40:05.097Z - info: GET /artikli
+2017-01-31T08:40:06.039Z - info: GET /paketi
+2017-01-31T08:40:06.397Z - info: GET /lastActivity/1/20
+2017-01-31T08:40:34.377Z - info: GET /artikli
+2017-01-31T08:40:35.286Z - info: GET /paketi
+2017-01-31T08:40:35.631Z - info: GET /lastActivity/1/20
+2017-01-31T08:40:41.115Z - info: POST /artikli
+2017-01-31T08:41:10.982Z - info: GET /artikli
+2017-01-31T08:41:11.806Z - info: GET /paketi
+2017-01-31T08:41:12.127Z - info: GET /lastActivity/1/20
+2017-01-31T08:44:02.137Z - info: GET /artikli
+2017-01-31T08:44:03.023Z - info: GET /paketi
+2017-01-31T08:44:03.410Z - info: GET /lastActivity/1/20
+2017-01-31T08:44:56.047Z - info: GET /artikli
+2017-01-31T08:44:56.924Z - info: GET /paketi
+2017-01-31T08:44:57.323Z - info: GET /lastActivity/1/20
+2017-01-31T08:45:39.919Z - info: GET /artikli
+2017-01-31T08:45:40.913Z - info: GET /paketi
+2017-01-31T08:45:41.320Z - info: GET /lastActivity/1/20
+2017-01-31T08:45:47.014Z - info: POST /artikli
+2017-01-31T08:49:29.491Z - info: GET /artikli
+2017-01-31T08:49:31.133Z - info: GET /paketi
+2017-01-31T08:49:31.467Z - info: GET /lastActivity/1/20
+2017-01-31T08:49:36.833Z - info: POST /artikli
+2017-01-31T08:50:20.722Z - info: GET /artikli
+2017-01-31T08:50:21.697Z - info: GET /paketi
+2017-01-31T08:50:22.056Z - info: GET /lastActivity/1/20
+2017-01-31T08:52:38.420Z - info: GET /artikli
+2017-01-31T08:52:39.334Z - info: GET /paketi
+2017-01-31T08:52:39.714Z - info: GET /lastActivity/1/20
+2017-01-31T08:53:58.468Z - info: GET /artikli
+2017-01-31T08:54:00.113Z - info: GET /paketi
+2017-01-31T08:54:00.471Z - info: GET /lastActivity/1/20
+2017-01-31T08:55:15.491Z - info: GET /artikli
+2017-01-31T08:55:17.163Z - info: GET /paketi
+2017-01-31T08:55:17.508Z - info: GET /lastActivity/1/20
+2017-01-31T08:56:03.521Z - info: GET /artikli
+2017-01-31T08:56:05.185Z - info: GET /paketi
+2017-01-31T08:56:05.528Z - info: GET /lastActivity/1/20
+2017-01-31T09:00:58.777Z - info: GET /artikli
+2017-01-31T09:00:59.673Z - info: GET /paketi
+2017-01-31T09:01:00.047Z - info: GET /lastActivity/1/20
+2017-01-31T09:01:05.269Z - info: POST /artikli
+2017-01-31T09:01:58.526Z - info: GET /artikli
+2017-01-31T09:02:00.166Z - info: GET /paketi
+2017-01-31T09:02:00.511Z - info: GET /lastActivity/1/20
+2017-01-31T09:02:10.520Z - info: GET /artikli
+2017-01-31T09:02:12.401Z - info: GET /artikli
+2017-01-31T09:50:16.320Z - info: GET /artikli
+2017-01-31T09:50:16.506Z - info: GET /paketi
+2017-01-31T09:50:16.891Z - info: GET /lastActivity/1/20
+2017-01-31T09:50:53.558Z - info: GET /artikli
+2017-01-31T09:50:53.753Z - info: GET /paketi
+2017-01-31T09:50:54.126Z - info: GET /lastActivity/1/20
+2017-01-31T09:51:32.256Z - info: GET /artikli
+2017-01-31T09:51:32.461Z - info: GET /paketi
+2017-01-31T09:51:32.847Z - info: GET /lastActivity/1/20
+2017-01-31T09:52:53.744Z - info: GET /artikli
+2017-01-31T09:52:53.913Z - info: GET /paketi
+2017-01-31T09:52:54.339Z - info: GET /lastActivity/1/20
+2017-01-31T09:57:22.293Z - info: GET /artikli
+2017-01-31T09:57:22.461Z - info: GET /paketi
+2017-01-31T09:57:22.861Z - info: GET /lastActivity/1/20
+2017-01-31T09:57:50.898Z - info: GET /artikli
+2017-01-31T09:57:51.079Z - info: GET /paketi
+2017-01-31T09:57:51.438Z - info: GET /lastActivity/1/20
+2017-01-31T09:57:56.624Z - info: POST /artikli
+2017-01-31T09:59:22.231Z - info: GET /artikli
+2017-01-31T09:59:22.413Z - info: GET /paketi
+2017-01-31T09:59:22.891Z - info: GET /lastActivity/1/20
+2017-01-31T10:01:18.494Z - info: GET /artikli
+2017-01-31T10:01:18.673Z - info: GET /paketi
+2017-01-31T10:01:19.040Z - info: GET /lastActivity/1/20
+2017-01-31T10:04:30.176Z - info: GET /artikli
+2017-01-31T10:04:30.349Z - info: GET /paketi
+2017-01-31T10:04:30.730Z - info: GET /lastActivity/1/20
+2017-01-31T10:25:38.808Z - info: GET /artikli
+2017-01-31T10:25:39.017Z - info: GET /paketi
+2017-01-31T10:25:39.422Z - info: GET /lastActivity/1/20
+2017-01-31T10:25:47.694Z - info: POST /artikli
+2017-01-31T10:25:52.253Z - info: GET /artikli
+2017-01-31T10:25:53.883Z - info: GET /artikli
+2017-01-31T10:25:55.118Z - info: GET /artikli
+2017-01-31T10:27:52.500Z - info: GET /artikli
+2017-01-31T10:27:52.731Z - info: GET /paketi
+2017-01-31T10:27:53.089Z - info: GET /lastActivity/1/20
+2017-01-31T10:28:23.385Z - info: POST /artikli
+2017-01-31T10:28:27.051Z - info: GET /artikli
+2017-01-31T10:30:09.578Z - info: POST /artikli
+2017-01-31T10:30:43.556Z - info: POST /artikli
+2017-01-31T10:35:46.295Z - info: GET /artikli
+2017-01-31T10:35:46.468Z - info: GET /paketi
+2017-01-31T10:35:46.780Z - info: GET /lastActivity/1/20
+2017-01-31T10:35:52.888Z - info: POST /artikli
+2017-01-31T10:36:50.783Z - info: POST /artikli
+2017-01-31T10:38:22.386Z - info: GET /artikli
+2017-01-31T10:38:42.006Z - info: GET /artikli
+2017-01-31T10:38:43.255Z - info: GET /artikli
+2017-01-31T10:38:44.291Z - info: GET /artikli
+2017-01-31T10:40:19.480Z - info: GET /artikli
+2017-01-31T10:40:19.695Z - info: GET /paketi
+2017-01-31T10:40:20.036Z - info: GET /lastActivity/1/20
+2017-01-31T10:40:32.702Z - info: POST /artikli
+2017-01-31T10:41:46.846Z - info: POST /artikli
+2017-01-31T10:42:37.290Z - info: POST /artikli
+2017-01-31T10:43:50.789Z - info: GET /artikli
+2017-01-31T10:43:50.976Z - info: GET /paketi
+2017-01-31T10:43:51.511Z - info: GET /lastActivity/1/20
+2017-01-31T10:44:18.932Z - info: POST /artikli
+2017-01-31T10:46:02.185Z - info: GET /artikli
+2017-01-31T10:46:02.403Z - info: GET /paketi
+2017-01-31T10:46:02.748Z - info: GET /lastActivity/1/20
+2017-01-31T10:46:10.216Z - info: POST /artikli
+2017-01-31T10:46:31.336Z - info: POST /artikli
+2017-01-31T10:47:17.722Z - info: GET /artikli
+2017-01-31T10:47:17.953Z - info: GET /paketi
+2017-01-31T10:47:18.269Z - info: GET /lastActivity/1/20
+2017-01-31T10:47:58.278Z - info: GET /artikli
+2017-01-31T10:47:58.480Z - info: GET /paketi
+2017-01-31T10:47:58.839Z - info: GET /lastActivity/1/20
+2017-01-31T10:48:05.533Z - info: POST /artikli
+2017-01-31T10:48:40.225Z - info: GET /artikli
+2017-01-31T10:48:40.413Z - info: GET /paketi
+2017-01-31T10:48:40.776Z - info: GET /lastActivity/1/20
+2017-01-31T10:48:50.671Z - info: POST /artikli
+2017-01-31T10:49:47.838Z - info: GET /artikli
+2017-01-31T10:49:48.049Z - info: GET /paketi
+2017-01-31T10:49:48.401Z - info: GET /lastActivity/1/20
+2017-01-31T10:49:55.887Z - info: POST /artikli
+2017-01-31T10:49:58.204Z - info: POST /artikli
+2017-01-31T10:50:25.769Z - info: GET /artikli
+2017-01-31T10:50:25.960Z - info: GET /paketi
+2017-01-31T10:50:26.346Z - info: GET /lastActivity/1/20
+2017-01-31T10:50:32.935Z - info: POST /artikli
+2017-01-31T10:50:54.151Z - info: GET /artikli
+2017-01-31T10:50:54.320Z - info: GET /paketi
+2017-01-31T10:50:54.655Z - info: GET /lastActivity/1/20
+2017-01-31T10:51:01.987Z - info: POST /artikli
+2017-01-31T10:51:41.787Z - info: POST /artikli
+2017-01-31T12:36:02.222Z - info: GET /artikli
+2017-01-31T12:36:02.551Z - info: GET /paketi
+2017-01-31T12:36:03.024Z - info: GET /lastActivity/1/20
+2017-01-31T12:37:40.635Z - info: GET /artikli
+2017-01-31T12:37:40.897Z - info: GET /paketi
+2017-01-31T12:37:41.276Z - info: GET /lastActivity/1/20
+2017-01-31T12:40:13.937Z - info: GET /artikli
+2017-01-31T12:40:14.148Z - info: GET /paketi
+2017-01-31T12:40:14.518Z - info: GET /lastActivity/1/20
+2017-01-31T12:41:01.734Z - info: POST /artikli
+2017-01-31T12:41:59.564Z - info: GET /artikli
+2017-01-31T12:41:59.772Z - info: GET /paketi
+2017-01-31T12:42:00.132Z - info: GET /lastActivity/1/20
+2017-01-31T12:45:14.128Z - info: GET /artikli
+2017-01-31T12:45:14.325Z - info: GET /paketi
+2017-01-31T12:45:14.687Z - info: GET /lastActivity/1/20
+2017-01-31T12:45:49.807Z - info: GET /artikli
+2017-01-31T12:45:49.989Z - info: GET /paketi
+2017-01-31T12:45:50.346Z - info: GET /lastActivity/1/20
+2017-01-31T12:46:58.202Z - info: GET /artikli
+2017-01-31T12:46:58.391Z - info: GET /paketi
+2017-01-31T12:46:58.746Z - info: GET /lastActivity/1/20
+2017-01-31T12:48:12.790Z - info: GET /artikli
+2017-01-31T12:48:12.988Z - info: GET /paketi
+2017-01-31T12:48:13.361Z - info: GET /lastActivity/1/20
+2017-01-31T12:48:33.809Z - info: POST /artikli
+2017-01-31T12:49:28.278Z - info: GET /artikli
+2017-01-31T12:49:28.512Z - info: GET /paketi
+2017-01-31T12:49:28.884Z - info: GET /lastActivity/1/20
+2017-01-31T12:49:39.221Z - info: POST /artikli
+2017-01-31T12:49:45.824Z - info: GET /artikli
+2017-01-31T12:54:12.255Z - info: GET /artikli
+2017-01-31T12:54:12.482Z - info: GET /paketi
+2017-01-31T12:54:12.825Z - info: GET /lastActivity/1/20
+2017-01-31T12:54:18.528Z - info: POST /artikli
+2017-01-31T12:58:09.685Z - info: GET /artikli
+2017-01-31T12:58:09.881Z - info: GET /paketi
+2017-01-31T12:58:10.245Z - info: GET /lastActivity/1/20
+2017-01-31T12:58:17.537Z - info: PUT /artikli/0
+2017-01-31T12:58:17.692Z - info: PUT /artikli/0
+2017-01-31T12:58:22.071Z - info: GET /artikli
+2017-01-31T12:58:24.966Z - info: GET /artikli
+2017-01-31T12:58:26.384Z - info: GET /artikli
+2017-01-31T12:58:34.002Z - info: DELETE /artikli
+2017-01-31T12:58:37.116Z - info: GET /artikli
+2017-01-31T12:58:40.957Z - info: PUT /artikli/0
+2017-01-31T12:58:41.123Z - info: PUT /artikli/0
+2017-01-31T13:00:37.507Z - info: GET /artikli
+2017-01-31T13:00:37.697Z - info: GET /paketi
+2017-01-31T13:00:38.058Z - info: GET /lastActivity/1/20
+2017-01-31T13:01:48.842Z - info: GET /artikli
+2017-01-31T13:01:49.065Z - info: GET /paketi
+2017-01-31T13:01:49.395Z - info: GET /lastActivity/1/20
+2017-01-31T13:01:57.498Z - info: PUT /artikli/0
+2017-01-31T13:01:57.668Z - info: PUT /artikli/0
+2017-01-31T13:03:01.991Z - info: GET /artikli
+2017-01-31T13:03:02.170Z - info: GET /paketi
+2017-01-31T13:03:02.503Z - info: GET /lastActivity/1/20
+2017-01-31T13:04:35.577Z - info: GET /artikli
+2017-01-31T13:04:35.812Z - info: GET /paketi
+2017-01-31T13:04:36.177Z - info: GET /lastActivity/1/20
+2017-01-31T13:04:42.732Z - info: PUT /artikli/1335
+2017-01-31T13:04:42.908Z - info: PUT /artikli/1335
+2017-01-31T13:04:45.457Z - info: GET /artikli
+2017-01-31T13:08:18.022Z - info: GET /artikli
+2017-01-31T13:08:18.213Z - info: GET /paketi
+2017-01-31T13:08:18.588Z - info: GET /lastActivity/1/20
+2017-01-31T13:08:23.267Z - info: GET /artikli
+2017-01-31T13:09:19.612Z - info: GET /artikli
+2017-01-31T13:09:19.810Z - info: GET /paketi
+2017-01-31T13:09:20.156Z - info: GET /lastActivity/1/20
+2017-01-31T13:09:23.877Z - info: GET /artikli
+2017-01-31T13:13:11.542Z - info: GET /artikli
+2017-01-31T13:13:11.730Z - info: GET /paketi
+2017-01-31T13:13:12.082Z - info: GET /lastActivity/1/20
+2017-01-31T13:13:15.986Z - info: GET /artikli
+2017-01-31T13:13:16.158Z - error:  SequelizeBaseError: ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '-100000, 100000' at line 1
+    at Query.formatError (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:175:14)
+    at Query._callback (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\mysql\query.js:49:21)
+    at Query.Sequence.end (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Sequence.js:86:24)
+    at Query.ErrorPacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\sequences\Query.js:94:8)
+    at Protocol._parsePacket (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:280:23)
+    at Parser.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Parser.js:74:12)
+    at Protocol.write (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\protocol\Protocol.js:39:16)
+    at Socket.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\mysql\lib\Connection.js:109:28)
+    at emitOne (events.js:96:13)
+    at Socket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:176:18)
+    at Socket.Readable.push (_stream_readable.js:134:10)
+    at TCP.onread (net.js:551:20)
+2017-01-31T13:13:59.721Z - info: GET /artikli
+2017-01-31T13:13:59.922Z - info: GET /paketi
+2017-01-31T13:14:00.266Z - info: GET /lastActivity/1/20
+2017-01-31T13:14:03.262Z - info: GET /artikli
+2017-01-31T13:16:12.954Z - info: GET /artikli
+2017-01-31T13:16:13.153Z - info: GET /paketi
+2017-01-31T13:16:13.486Z - info: GET /lastActivity/1/20
+2017-01-31T13:16:18.318Z - info: GET /artikli
+2017-01-31T13:16:20.259Z - info: GET /artikli
+2017-01-31T13:17:11.598Z - info: GET /artikli
+2017-01-31T13:17:11.781Z - info: GET /paketi
+2017-01-31T13:17:12.124Z - info: GET /lastActivity/1/20
+2017-01-31T13:17:16.321Z - info: GET /artikli
+2017-01-31T13:19:10.411Z - info: GET /artikli
+2017-01-31T13:19:10.419Z - error:  TypeError: (value.$in || value.$notIn).map is not a function
+    at Object.whereItemQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2288:49)
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1989:25
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:4389:15
+    at baseForOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:2652:24)
+    at Function.forOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:12254:24)
+    at Object.whereItemsQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1988:9)
+    at Object.getWhereConditions (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2423:19)
+    at Object.selectQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1529:28)
+    at QueryInterface.select (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\query-interface.js:669:25)
+    at Model.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\model.js:1398:32)
+    at Model.tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+2017-01-31T13:19:10.428Z - info: GET /paketi
+2017-01-31T13:19:10.829Z - info: GET /lastActivity/1/20
+2017-01-31T13:19:14.286Z - info: GET /artikli
+2017-01-31T13:19:14.300Z - error:  TypeError: val.replace is not a function
+    at Object.SqlString.escape (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\sql-string.js:63:15)
+    at Object.escape (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:978:22)
+    at Object.whereItemQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2358:22)
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1989:25
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:4389:15
+    at baseForOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:2652:24)
+    at Function.forOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:12254:24)
+    at Object.whereItemsQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1988:9)
+    at Object.getWhereConditions (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2423:19)
+    at Object.selectQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1529:28)
+    at QueryInterface.select (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\query-interface.js:669:25)
+    at Model.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\model.js:1398:32)
+    at Model.tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+2017-01-31T13:20:42.614Z - info: GET /artikli
+2017-01-31T13:20:42.622Z - error:  TypeError: (value.$in || value.$notIn).map is not a function
+    at Object.whereItemQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2288:49)
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1989:25
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:4389:15
+    at baseForOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:2652:24)
+    at Function.forOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:12254:24)
+    at Object.whereItemsQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1988:9)
+    at Object.getWhereConditions (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2423:19)
+    at Object.selectQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1529:28)
+    at QueryInterface.select (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\query-interface.js:669:25)
+    at Model.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\model.js:1398:32)
+    at Model.tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+2017-01-31T13:20:42.631Z - info: GET /paketi
+2017-01-31T13:20:43.022Z - info: GET /lastActivity/1/20
+2017-01-31T13:20:46.296Z - info: GET /artikli
+2017-01-31T13:20:46.311Z - error:  TypeError: (value.$in || value.$notIn).map is not a function
+    at Object.whereItemQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2288:49)
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1989:25
+    at C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:4389:15
+    at baseForOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:2652:24)
+    at Function.forOwn (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\node_modules\lodash\lodash.js:12254:24)
+    at Object.whereItemsQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1988:9)
+    at Object.getWhereConditions (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:2423:19)
+    at Object.selectQuery (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\dialects\abstract\query-generator.js:1529:28)
+    at QueryInterface.select (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\query-interface.js:669:25)
+    at Model.<anonymous> (C:\wamp\www\smapp\smapp-api\node_modules\sequelize\lib\model.js:1398:32)
+    at Model.tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+2017-01-31T13:25:20.847Z - info: GET /artikli
+2017-01-31T13:25:21.039Z - info: GET /paketi
+2017-01-31T13:25:21.359Z - info: GET /lastActivity/1/20
+2017-01-31T13:25:28.203Z - info: GET /artikli
+2017-01-31T13:25:48.812Z - info: GET /artikli
+2017-01-31T13:25:49.017Z - info: GET /paketi
+2017-01-31T13:25:49.381Z - info: GET /lastActivity/1/20
+2017-01-31T13:25:53.061Z - info: GET /artikli
+2017-01-31T13:31:11.242Z - info: GET /paketi
+2017-01-31T13:58:30.830Z - info: GET /artikli
+2017-01-31T13:58:31.045Z - info: GET /paketi
+2017-01-31T13:58:31.527Z - info: GET /lastActivity/1/20
+2017-01-31T13:58:40.592Z - info: POST /paketi
+2017-01-31T13:58:53.363Z - info: GET /artikli
+2017-01-31T13:58:53.551Z - info: GET /paketi
+2017-01-31T13:58:53.896Z - info: GET /lastActivity/1/20
+2017-01-31T14:10:51.850Z - info: GET /artikli
+2017-01-31T14:10:52.028Z - info: GET /paketi
+2017-01-31T14:10:52.347Z - info: GET /lastActivity/1/20
+2017-01-31T14:11:00.927Z - info: PUT /paketi/0
+2017-01-31T14:11:01.069Z - error:  ReferenceError: pushService is not defined
+    at C:\wamp\www\smapp\smapp-api\routes\paketi.push.route.js:198:13
+    at tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-01-31T14:11:10.599Z - info: GET /artikli
+2017-01-31T14:11:10.807Z - info: GET /paketi
+2017-01-31T14:11:11.146Z - info: GET /lastActivity/1/20
+2017-01-31T14:13:19.198Z - info: GET /artikli
+2017-01-31T14:13:19.393Z - info: GET /paketi
+2017-01-31T14:13:19.745Z - info: GET /lastActivity/1/20
+2017-01-31T14:14:12.606Z - info: PUT /paketi/128
+2017-01-31T14:14:13.418Z - error:  ReferenceError: pushService is not defined
+    at C:\wamp\www\smapp\smapp-api\routes\paketi.push.route.js:198:13
+    at tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-01-31T14:14:22.713Z - info: GET /artikli
+2017-01-31T14:14:22.913Z - info: GET /paketi
+2017-01-31T14:14:23.270Z - info: GET /lastActivity/1/20
+2017-01-31T14:14:37.288Z - info: PUT /paketi/128
+2017-01-31T14:14:38.112Z - error:  ReferenceError: pushService is not defined
+    at C:\wamp\www\smapp\smapp-api\routes\paketi.push.route.js:198:13
+    at tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-01-31T14:19:34.407Z - info: GET /artikli
+2017-01-31T14:19:34.624Z - info: GET /paketi
+2017-01-31T14:19:35.003Z - info: GET /lastActivity/1/20
+2017-01-31T14:20:12.031Z - info: GET /artikli
+2017-01-31T14:20:12.207Z - info: GET /paketi
+2017-01-31T14:20:12.541Z - info: GET /lastActivity/1/20
+2017-01-31T14:20:26.446Z - info: PUT /paketi/128
+2017-01-31T14:20:27.166Z - error:  ReferenceError: pushService is not defined
+    at C:\wamp\www\smapp\smapp-api\routes\paketi.push.route.js:198:13
+    at tryCatcher (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:510:31)
+    at Promise._settlePromise (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:567:18)
+    at Promise._settlePromise0 (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:612:10)
+    at Promise._settlePromises (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\promise.js:691:18)
+    at Async._drainQueue (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues (C:\wamp\www\smapp\smapp-api\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:651:20)
+    at tryOnImmediate (timers.js:624:5)
+    at processImmediate [as _immediateCallback] (timers.js:596:5)
+2017-01-31T14:20:58.967Z - info: GET /artikli
+2017-01-31T14:20:59.169Z - info: GET /paketi
+2017-01-31T14:20:59.541Z - info: GET /lastActivity/1/20
+2017-01-31T14:22:34.012Z - info: GET /artikli
+2017-01-31T14:22:34.246Z - info: GET /paketi
+2017-01-31T14:22:34.624Z - info: GET /lastActivity/1/20
+2017-01-31T14:22:40.900Z - info: DELETE /paketi
+2017-01-31T14:31:55.356Z - info: GET /statistika
+2017-01-31T14:33:04.682Z - info: GET /artikli
+2017-01-31T14:33:04.902Z - info: GET /paketi
+2017-01-31T14:33:05.272Z - info: GET /lastActivity/1/20
+2017-01-31T14:33:05.443Z - info: GET /statistika
+2017-01-31T14:33:06.332Z - info: GET /statistika
+2017-01-31T14:45:07.834Z - info: GET /artikli
+2017-01-31T14:45:08.041Z - info: GET /paketi
+2017-01-31T14:45:08.443Z - info: GET /lastActivity/1/20
+2017-01-31T14:45:08.622Z - info: GET /statistika
+2017-01-31T14:45:09.496Z - info: GET /statistika
+2017-01-31T14:48:11.321Z - info: GET /artikli
+2017-01-31T14:48:11.497Z - info: GET /paketi
+2017-01-31T14:48:11.828Z - info: GET /lastActivity/1/20
+2017-01-31T14:48:12.010Z - info: GET /statistika
+2017-01-31T14:48:12.905Z - info: GET /statistika
+2017-01-31T14:48:19.044Z - info: DELETE /artikli
+2017-01-31T14:48:21.030Z - info: GET /artikli
+2017-01-31T15:02:56.746Z - info: GET /artikli
+2017-01-31T15:02:56.947Z - info: GET /paketi
+2017-01-31T15:02:57.316Z - info: GET /lastActivity/1/20
+2017-01-31T15:02:57.496Z - info: GET /statistika
+2017-01-31T15:04:11.045Z - info: GET /artikli
+2017-01-31T15:04:11.253Z - info: GET /paketi
+2017-01-31T15:04:11.634Z - info: GET /lastActivity/1/20
+2017-01-31T15:04:18.426Z - info: GET /statistika
+2017-01-31T15:06:04.794Z - info: GET /artikli
+2017-01-31T15:06:05.035Z - info: GET /paketi
+2017-01-31T15:06:05.432Z - info: GET /lastActivity/1/20
+2017-01-31T15:06:05.865Z - info: GET /statistika
+2017-01-31T15:10:46.513Z - info: GET /artikli
+2017-01-31T15:10:46.701Z - info: GET /paketi
+2017-01-31T15:10:47.026Z - info: GET /lastActivity/1/20
+2017-01-31T15:10:47.498Z - info: GET /statistika
+2017-01-31T15:17:53.591Z - info: GET /artikli
+2017-01-31T15:17:53.767Z - info: GET /paketi
+2017-01-31T15:17:54.103Z - info: GET /lastActivity/1/20
+2017-01-31T15:17:54.547Z - info: GET /statistika
+2017-01-31T15:18:56.270Z - info: GET /artikli
+2017-01-31T15:18:56.452Z - info: GET /paketi
+2017-01-31T15:18:56.835Z - info: GET /lastActivity/1/20
+2017-01-31T15:18:57.274Z - info: GET /statistika
+2017-01-31T15:20:06.348Z - info: GET /artikli
+2017-01-31T15:20:06.551Z - info: GET /paketi
+2017-01-31T15:20:06.864Z - info: GET /lastActivity/1/20
+2017-01-31T15:20:07.357Z - info: GET /statistika
+2017-02-01T06:40:34.395Z - info: GET /artikli
+2017-02-01T06:40:34.615Z - info: GET /paketi
+2017-02-01T06:40:35.207Z - info: GET /lastActivity/1/20
+2017-02-01T06:40:35.923Z - info: GET /statistika
+2017-02-01T06:42:48.773Z - info: GET /artikli
+2017-02-01T06:42:49.006Z - info: GET /paketi
+2017-02-01T06:42:49.368Z - info: GET /lastActivity/1/20
+2017-02-01T06:42:49.783Z - info: GET /statistika
+2017-02-01T06:43:57.271Z - info: GET /artikli
+2017-02-01T06:43:57.481Z - info: GET /paketi
+2017-02-01T06:43:57.787Z - info: GET /lastActivity/1/20
+2017-02-01T06:43:58.251Z - info: GET /statistika
+2017-02-01T06:46:25.225Z - info: GET /artikli
+2017-02-01T06:46:25.406Z - info: GET /paketi
+2017-02-01T06:46:25.748Z - info: GET /lastActivity/1/20
+2017-02-01T06:46:26.191Z - info: GET /statistika
+2017-02-01T06:46:33.203Z - info: POST /artikli
+2017-02-01T06:46:34.522Z - info: GET /artikli
+2017-02-01T06:46:42.524Z - info: GET /artikli
+2017-02-01T06:46:48.734Z - info: POST /artikli
+2017-02-01T06:46:49.947Z - info: GET /artikli
+2017-02-01T06:47:23.329Z - info: GET /artikli
+2017-02-01T06:55:02.210Z - info: GET /artikli
+2017-02-01T06:55:02.396Z - info: GET /paketi
+2017-02-01T06:55:02.594Z - info: GET /lastActivity/1/20
+2017-02-01T06:55:03.453Z - info: GET /statistika
+2017-02-01T06:56:06.650Z - info: GET /artikli
+2017-02-01T06:56:06.907Z - info: GET /paketi
+2017-02-01T06:56:07.115Z - info: GET /lastActivity/1/20
+2017-02-01T06:56:07.854Z - info: GET /statistika
+2017-02-01T06:57:44.299Z - info: GET /artikli
+2017-02-01T06:57:44.481Z - info: GET /paketi
+2017-02-01T06:57:44.663Z - info: GET /lastActivity/1/20
+2017-02-01T06:57:45.393Z - info: GET /statistika
+2017-02-01T06:58:28.180Z - info: GET /artikli
+2017-02-01T06:58:28.413Z - info: GET /paketi
+2017-02-01T06:58:28.587Z - info: GET /lastActivity/1/20
+2017-02-01T06:58:29.333Z - info: GET /statistika
+2017-02-01T07:11:14.973Z - info: GET /artikli
+2017-02-01T07:11:15.149Z - info: GET /paketi
+2017-02-01T07:11:15.333Z - info: GET /lastActivity/1/20
+2017-02-01T07:11:15.804Z - info: GET /statistika
+2017-02-01T07:13:36.976Z - info: GET /artikli
+2017-02-01T07:13:37.161Z - info: GET /paketi
+2017-02-01T07:13:37.374Z - info: GET /lastActivity/1/20
+2017-02-01T07:13:37.827Z - info: GET /statistika
+2017-02-01T07:20:26.861Z - info: GET /artikli
+2017-02-01T07:20:27.047Z - info: GET /paketi
+2017-02-01T07:20:27.258Z - info: GET /lastActivity/1/20
+2017-02-01T07:20:27.728Z - info: GET /statistika
+2017-02-01T07:20:30.416Z - info: GET /paketi
+2017-02-01T07:22:14.613Z - info: GET /artikli
+2017-02-01T07:22:14.787Z - info: GET /paketi
+2017-02-01T07:22:15.017Z - info: GET /lastActivity/1/20
+2017-02-01T07:22:15.452Z - info: GET /statistika
+2017-02-01T07:22:20.605Z - info: GET /paketi
+2017-02-01T07:22:24.228Z - info: GET /paketi
+2017-02-01T07:24:28.946Z - info: GET /artikli
+2017-02-01T07:24:29.133Z - info: GET /paketi
+2017-02-01T07:24:29.372Z - info: GET /lastActivity/1/20
+2017-02-01T07:24:29.858Z - info: GET /statistika
+2017-02-01T07:24:33.673Z - info: GET /artikli
+2017-02-01T07:24:36.536Z - info: GET /artikli
+2017-02-01T07:24:42.646Z - info: DELETE /artikli
+2017-02-01T07:24:45.608Z - info: GET /artikli
+2017-02-01T07:24:47.043Z - info: GET /artikli
+2017-02-01T07:24:51.021Z - info: DELETE /artikli
+2017-02-01T07:24:53.768Z - info: GET /artikli
+2017-02-01T07:25:29.651Z - info: GET /artikli
+2017-02-01T07:25:29.856Z - info: GET /paketi
+2017-02-01T07:25:30.090Z - info: GET /lastActivity/1/20
+2017-02-01T07:25:30.564Z - info: GET /statistika
+2017-02-01T07:25:38.278Z - info: POST /artikli
+2017-02-01T07:25:39.511Z - info: GET /artikli
+2017-02-01T07:25:40.010Z - info: GET /statistika
+2017-02-01T07:25:50.048Z - info: DELETE /artikli
+2017-02-01T07:25:55.436Z - info: GET /artikli
+2017-02-01T07:27:54.236Z - info: GET /artikli
+2017-02-01T07:27:54.468Z - info: GET /paketi
+2017-02-01T07:27:54.683Z - info: GET /lastActivity/1/20
+2017-02-01T07:27:55.155Z - info: GET /statistika
+2017-02-01T07:28:33.739Z - info: GET /artikli
+2017-02-01T07:28:33.949Z - info: GET /paketi
+2017-02-01T07:28:34.197Z - info: GET /lastActivity/1/20
+2017-02-01T07:28:34.678Z - info: GET /statistika
+2017-02-01T07:28:41.429Z - info: GET /statistika
+2017-02-01T07:28:42.254Z - info: GET /paketi
+2017-02-01T07:28:49.476Z - info: GET /artikli
+2017-02-01T07:30:33.972Z - info: GET /artikli
+2017-02-01T07:30:34.142Z - info: GET /paketi
+2017-02-01T07:30:34.339Z - info: GET /lastActivity/1/20
+2017-02-01T07:30:34.804Z - info: GET /statistika
+2017-02-01T07:30:37.749Z - info: GET /statistika
+2017-02-01T07:30:42.286Z - info: GET /statistika
+2017-02-01T07:31:32.067Z - info: GET /artikli
+2017-02-01T07:31:32.237Z - info: GET /paketi
+2017-02-01T07:31:32.431Z - info: GET /lastActivity/1/20
+2017-02-01T07:31:32.905Z - info: GET /statistika
+2017-02-01T07:31:37.224Z - info: GET /statistika
+2017-02-01T07:32:08.202Z - info: GET /statistika
+2017-02-01T07:32:47.123Z - info: GET /artikli
+2017-02-01T07:32:49.632Z - info: GET /artikli
+2017-02-10T19:55:15.671Z - info: GET /artikli
+2017-02-10T19:56:29.353Z - info: GET /artikli
+2017-02-10T19:58:57.985Z - info: GET /artikli
+2017-02-10T19:59:32.372Z - info: GET /artikli
+2017-02-10T20:00:30.407Z - info: GET /artikli
+2017-02-10T20:00:58.292Z - info: GET /artikli
+2017-02-10T20:01:28.699Z - info: GET /artikli
+2017-02-10T20:04:50.716Z - info: GET /artikli
+2017-02-10T20:05:46.807Z - info: GET /artikli
+2017-02-10T20:06:57.287Z - info: GET /artikli
+2017-02-10T20:08:56.385Z - info: GET /artikli
+2017-02-10T20:09:47.770Z - info: GET /artikli
+2017-02-10T20:10:02.845Z - info: GET /artikli
+2017-02-10T20:10:41.648Z - info: GET /artikli
+2017-02-10T20:14:17.195Z - info: GET /artikli
+2017-02-10T20:15:19.425Z - info: GET /artikli
+2017-02-10T20:15:38.852Z - info: GET /artikli
+2017-02-10T20:16:19.174Z - info: GET /artikli
+2017-02-10T20:16:49.267Z - info: GET /artikli
+2017-02-10T20:18:15.203Z - info: GET /artikli
+2017-02-10T20:19:18.917Z - info: GET /artikli
+2017-02-10T20:25:03.484Z - info: GET /artikli
+2017-02-10T20:26:17.965Z - info: GET /artikli
+2017-02-10T20:27:19.211Z - info: GET /artikli
+2017-02-10T20:27:54.528Z - info: GET /artikli
+2017-02-10T20:28:49.265Z - info: GET /artikli
+2017-02-10T20:30:05.194Z - info: GET /artikli
+2017-02-10T20:30:40.493Z - info: GET /artikli
+2017-02-10T20:31:45.221Z - info: GET /artikli
+2017-02-10T20:32:39.197Z - info: GET /artikli
+2017-02-10T20:33:52.220Z - info: GET /artikli
+2017-02-10T20:33:54.617Z - info: GET /artikli
+2017-02-10T20:34:01.384Z - info: GET /artikli
+2017-02-10T20:34:04.422Z - info: GET /artikli
+2017-02-10T20:34:08.909Z - info: GET /artikli
+2017-02-10T20:34:13.724Z - info: GET /artikli
+2017-02-10T20:34:18.564Z - info: GET /artikli
+2017-02-10T20:34:24.205Z - info: GET /artikli
+2017-02-10T20:34:28.109Z - info: GET /artikli
+2017-02-10T20:35:10.038Z - info: GET /artikli
+2017-02-10T20:35:12.276Z - info: GET /artikli
+2017-02-10T20:35:15.792Z - info: GET /artikli
+2017-02-10T20:35:18.292Z - info: GET /artikli
+2017-02-10T20:35:34.162Z - info: GET /artikli
+2017-02-10T20:35:43.410Z - info: GET /artikli
+2017-02-10T20:35:47.828Z - info: GET /artikli
+2017-02-10T20:35:56.793Z - info: GET /artikli
+2017-02-10T20:36:00.684Z - info: GET /artikli
+2017-02-10T20:36:39.060Z - info: GET /artikli
+2017-02-10T20:36:41.438Z - info: GET /artikli
+2017-02-10T20:36:44.766Z - info: GET /artikli
+2017-02-10T20:36:52.465Z - info: GET /artikli
+2017-02-10T20:36:55.663Z - info: GET /artikli
+2017-02-10T20:37:21.179Z - info: GET /artikli
+2017-02-10T20:37:55.249Z - info: GET /artikli
+2017-02-10T20:37:56.849Z - info: GET /artikli
+2017-02-10T20:39:30.358Z - info: GET /artikli
+2017-02-10T20:39:33.965Z - info: GET /artikli
+2017-02-10T20:41:05.190Z - info: GET /artikli
+2017-02-10T20:41:09.562Z - info: GET /artikli
+2017-02-10T20:41:47.981Z - info: GET /artikli
+2017-02-10T20:41:50.349Z - info: GET /artikli
+2017-02-10T20:42:04.092Z - info: GET /artikli
+2017-02-10T20:42:08.752Z - info: GET /artikli
+2017-02-10T20:43:20.921Z - info: GET /artikli
+2017-02-10T20:43:42.226Z - info: GET /artikli
+2017-02-10T20:46:52.943Z - info: GET /artikli
+2017-02-10T20:47:12.346Z - info: GET /artikli
+2017-02-10T20:48:05.394Z - info: GET /artikli
+2017-02-10T20:48:31.931Z - info: GET /artikli
+2017-02-10T21:01:26.330Z - info: GET /artikli
+2017-02-10T21:01:28.705Z - info: GET /artikli
+2017-02-10T21:01:35.001Z - info: GET /artikli
+2017-02-10T21:01:41.006Z - info: GET /artikli
+2017-02-10T21:01:46.305Z - info: GET /artikli
+2017-02-10T21:01:51.263Z - info: GET /artikli
+2017-02-10T21:01:52.624Z - info: GET /artikli
+2017-02-10T21:02:20.828Z - info: GET /artikli
+2017-02-10T21:02:22.595Z - info: GET /artikli
+2017-02-10T21:02:29.178Z - info: GET /artikli
+2017-02-10T21:02:45.191Z - info: GET /artikli
+2017-02-10T21:02:52.264Z - info: GET /artikli
+2017-02-10T21:03:24.419Z - info: GET /artikli
+2017-02-10T21:03:27.249Z - info: GET /artikli
+2017-02-10T21:03:28.586Z - info: GET /artikli
+2017-02-10T21:03:32.179Z - info: GET /artikli
+2017-02-10T21:03:33.327Z - info: GET /artikli
+2017-02-10T21:04:28.529Z - info: GET /artikli
+2017-02-10T21:05:27.386Z - info: GET /artikli
+2017-02-10T21:05:42.208Z - info: GET /artikli
+2017-02-10T22:03:14.200Z - info: GET /artikli
+2017-02-10T22:04:44.218Z - info: GET /artikli
+2017-02-10T22:06:49.862Z - info: GET /artikli
+2017-02-10T22:09:04.461Z - info: GET /artikli
+2017-02-10T22:09:11.412Z - info: GET /artikli
+2017-02-10T22:10:08.462Z - info: GET /artikli
+2017-02-10T22:11:20.478Z - info: GET /artikli
+2017-02-10T22:12:54.014Z - info: GET /artikli
+2017-02-10T22:12:56.232Z - info: GET /artikli
+2017-02-10T22:12:56.993Z - info: GET /artikli
+2017-02-10T22:12:57.714Z - info: GET /artikli
+2017-02-10T22:12:58.503Z - info: GET /artikli
+2017-02-10T22:12:59.055Z - info: GET /artikli
+2017-02-10T22:13:05.098Z - info: GET /artikli
+2017-02-10T22:13:10.138Z - info: GET /artikli
+2017-02-10T22:13:21.396Z - info: GET /artikli
+2017-02-10T22:13:24.802Z - info: GET /artikli
+2017-02-10T22:13:27.851Z - info: GET /artikli
+2017-02-10T22:13:36.121Z - info: GET /artikli
+2017-02-10T22:13:43.386Z - info: GET /artikli
+2017-02-10T22:14:21.502Z - info: GET /artikli
+2017-02-10T22:14:59.030Z - info: GET /artikli
+2017-02-10T22:15:22.193Z - info: GET /artikli
+2017-02-10T22:15:39.448Z - info: GET /artikli
+2017-02-10T22:19:09.125Z - info: GET /artikli
+2017-02-10T22:19:12.317Z - info: GET /artikli
+2017-02-10T22:19:34.624Z - info: GET /artikli
+2017-02-10T22:21:33.541Z - info: GET /artikli
+2017-02-10T22:34:45.815Z - info: GET /statistika
+2017-02-10T22:36:50.500Z - info: GET /statistika
+2017-02-10T22:37:51.413Z - info: GET /statistika
+2017-02-10T22:38:31.886Z - info: GET /statistika
+2017-02-10T22:39:59.051Z - info: GET /statistika
+2017-02-10T22:40:22.044Z - info: GET /statistika
+2017-02-10T22:40:54.214Z - info: GET /statistika
+2017-02-10T22:41:31.375Z - info: GET /artikli
+2017-02-11T08:26:47.866Z - info: GET /statistika
+2017-02-11T08:27:57.976Z - info: GET /artikli
+2017-02-11T08:30:31.588Z - info: GET /artikli
+2017-02-11T08:35:01.475Z - info: GET /artikli
+2017-02-11T08:36:02.325Z - info: GET /artikli
+2017-02-11T08:36:34.169Z - info: GET /artikli
+2017-02-11T08:40:21.754Z - info: GET /artikli
+2017-02-11T08:42:11.731Z - info: GET /artikli
+2017-02-11T08:43:06.753Z - info: GET /artikli
+2017-02-11T08:50:07.884Z - info: GET /artikli
+2017-02-11T08:51:00.494Z - info: GET /artikli
+2017-02-11T08:52:40.773Z - info: GET /artikli
+2017-02-11T08:53:06.341Z - info: GET /artikli
+2017-02-11T08:53:49.914Z - info: GET /artikli
+2017-02-11T08:56:20.276Z - info: GET /artikli
+2017-02-11T08:56:49.270Z - info: GET /artikli
+2017-02-11T08:57:52.061Z - info: GET /artikli
+2017-02-11T08:59:25.404Z - info: GET /artikli
+2017-02-11T08:59:54.988Z - info: GET /artikli
+2017-02-11T09:00:25.878Z - info: GET /artikli
+2017-02-11T09:01:54.937Z - info: GET /artikli
+2017-02-11T09:02:46.255Z - info: GET /artikli
+2017-02-11T09:04:21.378Z - info: GET /artikli
+2017-02-11T09:09:29.762Z - info: GET /statistika
+2017-02-11T09:09:33.051Z - info: GET /artikli
+2017-02-11T09:10:11.054Z - info: GET /artikli
+2017-02-11T09:11:55.360Z - info: GET /artikli
+2017-02-11T09:12:34.258Z - info: GET /artikli
+2017-02-11T09:13:38.868Z - info: GET /artikli
+2017-02-11T09:14:22.850Z - info: GET /artikli
+2017-02-11T09:16:32.038Z - info: GET /artikli
+2017-02-11T09:17:10.243Z - info: GET /artikli
+2017-02-11T09:18:05.837Z - info: GET /artikli
+2017-02-11T09:18:29.169Z - info: GET /artikli
+2017-02-11T09:18:59.991Z - info: GET /artikli
+2017-02-11T09:21:20.819Z - info: GET /artikli
+2017-02-11T09:21:58.844Z - info: GET /artikli
+2017-02-11T09:22:41.664Z - info: GET /artikli
+2017-02-11T09:24:15.509Z - info: GET /artikli
+2017-02-11T09:28:29.328Z - info: GET /artikli
+2017-02-11T09:29:36.062Z - info: GET /artikli
+2017-02-11T09:33:13.797Z - info: GET /artikli
+2017-02-11T09:33:42.130Z - info: GET /artikli
+2017-02-28T22:20:37.032Z - info: POST /artikli
+2017-02-28T22:23:04.701Z - info: POST /artikli
+2017-02-28T22:25:06.877Z - info: POST /artikli
+2017-02-28T22:25:39.738Z - info: POST /artikli
+2017-02-28T22:27:45.781Z - info: POST /artikli
+2017-02-28T22:29:38.973Z - info: POST /artikli
+2017-04-24T16:04:21.703Z - info: GET /statistika
+2017-04-24T16:04:21.764Z - info: GET /lastActivity/1/5
+2017-04-24T16:04:21.780Z - info: GET /artikli
+2017-04-24T16:04:23.810Z - info: GET /statistika
+2017-04-24T16:06:26.724Z - info: GET /paketi
+2017-04-24T16:06:29.200Z - info: GET /paketi
+2017-04-24T16:07:36.320Z - info: GET /statistika
+2017-04-24T16:07:36.405Z - info: GET /lastActivity/1/5
+2017-04-24T16:07:36.422Z - info: GET /artikli
+2017-04-24T16:07:37.864Z - info: GET /statistika
+2017-04-24T16:07:41.630Z - info: GET /paketi
+2017-04-24T16:07:41.813Z - info: GET /paketi
+2017-04-24T16:09:31.397Z - info: GET /statistika
+2017-04-24T16:09:31.464Z - info: GET /lastActivity/1/5
+2017-04-24T16:09:31.486Z - info: GET /artikli
+2017-04-24T16:09:32.756Z - info: GET /statistika
+2017-04-24T16:09:35.593Z - info: GET /paketi
+2017-04-24T16:09:35.738Z - info: GET /paketi
+2017-04-24T16:10:38.720Z - info: GET /statistika
+2017-04-24T16:10:38.841Z - info: GET /lastActivity/1/5
+2017-04-24T16:10:38.865Z - info: GET /artikli
+2017-04-24T16:10:40.157Z - info: GET /statistika
+2017-04-24T16:10:40.556Z - info: GET /paketi
+2017-04-24T16:10:40.560Z - info: GET /paketi
+2017-04-24T16:12:13.709Z - info: GET /statistika
+2017-04-24T16:12:17.572Z - info: GET /paketi
+2017-04-24T16:12:17.580Z - info: GET /paketi
+2017-04-24T16:12:57.953Z - info: GET /statistika
+2017-04-24T16:12:59.307Z - info: GET /paketi
+2017-04-24T16:12:59.315Z - info: GET /paketi
+2017-04-24T16:14:07.552Z - info: GET /statistika
+2017-04-24T16:14:10.545Z - info: GET /paketi
+2017-04-24T16:14:10.558Z - info: GET /paketi
+2017-04-24T16:20:59.955Z - info: GET /statistika
+2017-04-24T16:21:00.032Z - info: GET /lastActivity/1/5
+2017-04-24T16:21:00.040Z - info: GET /artikli
+2017-04-24T16:21:01.475Z - info: GET /statistika
+2017-04-24T16:21:02.340Z - info: GET /paketi
+2017-04-24T16:21:02.346Z - info: GET /paketi
+2017-04-24T16:21:56.742Z - info: GET /statistika
+2017-04-24T16:21:56.808Z - info: GET /lastActivity/1/5
+2017-04-24T16:21:56.820Z - info: GET /artikli
+2017-04-24T16:21:58.147Z - info: GET /statistika
+2017-04-24T16:21:58.443Z - info: GET /paketi
+2017-04-24T16:21:58.449Z - info: GET /paketi
+2017-04-24T16:23:06.907Z - info: GET /statistika
+2017-04-24T16:23:06.981Z - info: GET /lastActivity/1/5
+2017-04-24T16:23:07.062Z - info: GET /artikli
+2017-04-24T16:23:08.380Z - info: GET /statistika
+2017-04-24T16:23:13.379Z - info: GET /paketi
+2017-04-24T16:23:13.386Z - info: GET /paketi
+2017-04-24T16:25:18.748Z - info: GET /statistika
+2017-04-24T16:25:18.824Z - info: GET /lastActivity/1/5
+2017-04-24T16:25:18.839Z - info: GET /artikli
+2017-04-24T16:25:20.136Z - info: GET /statistika
+2017-04-24T16:25:21.075Z - info: GET /paketi
+2017-04-24T16:25:21.079Z - info: GET /paketi
+2017-04-24T16:26:14.302Z - info: GET /statistika
+2017-04-24T16:26:14.347Z - info: GET /lastActivity/1/5
+2017-04-24T16:26:14.354Z - info: GET /artikli
+2017-04-24T16:26:15.641Z - info: GET /statistika
+2017-04-24T16:26:15.872Z - info: GET /paketi
+2017-04-24T16:26:15.879Z - info: GET /paketi
+2017-04-24T16:26:18.251Z - info: GET /paketi
+2017-04-24T16:26:19.520Z - info: GET /paketi
+2017-04-24T16:26:25.543Z - info: GET /statistika
+2017-04-24T16:26:27.268Z - info: GET /paketi
+2017-04-24T16:26:27.273Z - info: GET /paketi
+2017-04-24T16:26:46.206Z - info: GET /statistika
+2017-04-24T16:26:55.667Z - info: GET /paketi
+2017-04-24T16:27:18.518Z - info: GET /statistika
+2017-04-24T16:27:20.778Z - info: GET /statistika
+2017-04-24T16:27:20.784Z - info: GET /lastActivity/1/5
+2017-04-24T16:27:20.788Z - info: GET /artikli
+2017-04-24T16:27:29.116Z - info: GET /statistika
+2017-04-24T16:27:33.555Z - info: GET /statistika
+2017-04-24T16:27:36.512Z - info: GET /statistika
+2017-04-24T16:27:37.414Z - info: GET /lastActivity/1/5
+2017-04-24T16:27:37.426Z - info: GET /artikli
+2017-04-24T16:27:37.498Z - info: GET /statistika
+2017-04-24T16:28:53.806Z - info: GET /statistika
+2017-04-24T16:28:53.831Z - info: GET /lastActivity/1/5
+2017-04-24T16:28:53.839Z - info: GET /artikli
+2017-04-24T16:28:55.176Z - info: GET /statistika
+2017-04-24T16:28:55.852Z - info: GET /paketi
+2017-04-24T16:28:55.857Z - info: GET /paketi
+2017-04-24T16:29:23.944Z - info: GET /statistika
+2017-04-24T16:33:41.213Z - info: GET /statistika
+2017-04-24T16:33:42.300Z - info: GET /artikli
+2017-04-24T16:33:42.314Z - info: GET /artikli/limit/1/10
+2017-04-24T16:33:47.271Z - info: GET /statistika
+2017-04-24T16:39:08.328Z - info: GET /artikli/limit/2/10
+2017-04-24T16:46:17.018Z - info: GET /statistika
+2017-04-24T16:46:17.082Z - info: GET /lastActivity/1/5
+2017-04-24T16:46:17.088Z - info: GET /artikli
+2017-04-24T16:46:18.377Z - info: GET /statistika
+2017-04-24T16:46:18.545Z - info: GET /paketi
+2017-04-24T16:46:18.553Z - info: GET /paketi
+2017-04-24T17:55:39.947Z - info: GET /statistika
+2017-04-24T17:55:40.891Z - info: GET /artikli
+2017-04-24T17:55:40.914Z - info: GET /artikli/limit/1/10
+2017-04-24T17:55:46.720Z - info: GET /paketi
+2017-04-24T17:55:46.733Z - info: GET /paketi
+2017-04-24T17:56:01.619Z - info: GET /statistika
+2017-04-24T17:58:49.666Z - info: GET /statistika
+2017-04-24T18:07:29.132Z - info: GET /statistika
+2017-04-24T18:07:29.233Z - info: GET /lastActivity/1/5
+2017-04-24T18:07:29.246Z - info: GET /artikli
+2017-04-24T18:07:30.504Z - info: GET /statistika
+2017-04-24T18:11:07.644Z - info: GET /statistika
+2017-04-24T18:11:07.704Z - info: GET /lastActivity/1/5
+2017-04-24T18:11:07.734Z - info: GET /artikli
+2017-04-24T18:11:08.975Z - info: GET /statistika
+2017-04-24T18:11:25.805Z - info: GET /paketi
+2017-04-24T18:11:25.810Z - info: GET /paketi
+2017-04-24T18:15:50.098Z - info: GET /statistika
+2017-04-24T18:15:50.216Z - info: GET /lastActivity/1/5
+2017-04-24T18:15:50.229Z - info: GET /artikli
+2017-04-24T18:15:51.431Z - info: GET /statistika
+2017-04-24T18:30:16.983Z - info: GET /statistika
+2017-04-24T18:30:17.032Z - info: GET /lastActivity/1/5
+2017-04-24T18:30:17.044Z - info: GET /artikli
+2017-04-24T18:30:18.319Z - info: GET /statistika
+2017-04-25T14:12:19.981Z - info: GET /config/backup
