@@ -18,6 +18,11 @@
     "type": "git",
     "url": "https://github.com/openshift/origin-server"
   },
+  "private": true,
+  "engines": {
+    "node": "8.4.0",
+    "npm": "5.3.0"
+  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "ejs": "^2.5.1",
@@ -40,7 +45,6 @@
     "nodemon": "^1.11.0"
   },
   "bundleDependencies": [],
-  "private": true,
   "scripts": {
     "start": "node app/start.js"
   },
