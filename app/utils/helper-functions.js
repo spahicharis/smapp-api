@@ -14,7 +14,7 @@ function posaljiPush(titleMsg, bodyMsg, senderId, res, logger, id = 0) {
     message.addData('message', bodyMsg);
     message.addData('sound', 'default');
     message.addData('color', '#60D4AF');
-    message.addData('icon', 'drawable-ldpi-icon'); 
+    message.addData('icon', 'icon.png'); 
     message.addData('click_action', id);        
     message.addData('tag', id);
     message.delayWhileIdle = true; //delay sending while receiving device is offline
