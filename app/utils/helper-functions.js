@@ -14,7 +14,9 @@ function posaljiPush(titleMsg, bodyMsg, senderId, res, logger, id = 0) {
     message.addData('message', bodyMsg);
     message.addData('sound', 'default');
     message.addData('color', '#60D4AF');
-    message.addNotification('tag', id);
+    message.addData('icon', 'icon'); 
+    message.addData('click_action', 'KLIK AKCIJA');        
+    message.addData('tag', id);
     message.delayWhileIdle = true; //delay sending while receiving device is offline
     message.timeToLive = 300000; //number of seconds to keep the message on
     //server if the device is offline
