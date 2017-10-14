@@ -23,7 +23,7 @@ const helper = require('./utils/helper-functions');
 if (!fs.existsSync(logDir)) {
     fs.mkdirSync(logDir);
 }
-
+ 
 if (!fs.existsSync(dumpDir)) {
     fs.mkdirSync(dumpDir);
 }

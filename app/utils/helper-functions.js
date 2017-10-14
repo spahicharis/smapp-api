@@ -4,7 +4,7 @@ const con = require('../config/db_conf.js');
 const connection = con.connection();
 
 
-function posaljiPush(titleMsg, bodyMsg, senderId, res, logger) {
+function posaljiPush(titleMsg, bodyMsg, senderId, res, logger, id = 0) {
 
     const device_tokens = []; //create array for storing device tokens
     const retry_times = 4; //the number of times to retry sending the message if it fails
@@ -14,7 +14,7 @@ function posaljiPush(titleMsg, bodyMsg, senderId, res, logger) {
     message.addData('message', bodyMsg);
     message.addData('sound', 'default');
     message.addData('color', '#60D4AF');
-    message.collapseKey = 'SMApp aktivnosti'; //grouping messages
+    message.addNotification('tag', id);
     message.delayWhileIdle = true; //delay sending while receiving device is offline
     message.timeToLive = 300000; //number of seconds to keep the message on
     //server if the device is offline

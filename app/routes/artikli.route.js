@@ -487,7 +487,7 @@ module.exports = function (router, connection, mysql, logger) {
                 };
 
                 const poruka = prepareMessage('insert', req.body.artikal);
-                helperFunctions.posaljiPush(poruka.title, poruka.body, req.body.artikal.senderId, res, logger);
+                helperFunctions.posaljiPush(poruka.title, poruka.body, req.body.artikal.senderId, res, logger, artikal.dataValues.idprodaja);
 
                 if (artikal)
                     response.Artikli.push(artikal.dataValues);
@@ -525,7 +525,7 @@ module.exports = function (router, connection, mysql, logger) {
                 };
                 res.json(response);
                 const poruka = prepareMessage('update', req.body.artikal);
-                helperFunctions.posaljiPush(poruka.title, poruka.body, req.body.artikal.senderId, res, logger);
+                helperFunctions.posaljiPush(poruka.title, poruka.body, req.body.artikal.senderId, res, logger, req.params.idprodaja);
             })
             .catch(function (e) {
                 logger.error(e);
@@ -554,7 +554,7 @@ module.exports = function (router, connection, mysql, logger) {
                     Message: artikal + ' updated!'
                 };
                 const poruka = prepareMessage('statusChange', req.body.artikal);
-                helperFunctions.posaljiPush(poruka.title, poruka.body, req.body.artikal.senderId, res, logger);
+                helperFunctions.posaljiPush(poruka.title, poruka.body, req.body.artikal.senderId, res, logger, req.params.idprodaja);
                 res.json(response);
             })
             .catch(function (e) {
