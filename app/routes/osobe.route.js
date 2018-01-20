@@ -22,9 +22,12 @@ module.exports = function (router, connection, mysql, logger) {
     router.post("/osobe", function (req, res) {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        res.setHeader('Access-Control-Allow-Methods', 'POST');
         // Request methods you wish to allow
 
-        res.setHeader('Access-Control-Allow-Methods', 'POST');
+        logger.info("POST OSOBE", req.body);
+
+        
         let query = "INSERT INTO ?? (??,??,??) VALUES " +
             "(?,?,?)";
         const table = ["osobe",

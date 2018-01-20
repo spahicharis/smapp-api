@@ -17,7 +17,10 @@ const schedule = require('node-schedule');
 const moment = require("moment");
 const mysqlDump = require('mysqldump');
 const helper = require('./utils/helper-functions');
-//const cors = require('cors');
+const cors = require('cors'); 
+
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({extended: false})); // support encoded bodies
  
 // Create the log directory if it does not exist
 if (!fs.existsSync(logDir)) {
@@ -69,11 +72,11 @@ const j = schedule.scheduleJob({hour: 7, minute: 0}, function () {
 
 app.set('superSecret', con.configParams.secret);
 app.set('port', (process.env.PORT || 8081));
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({extended: false})); // support encoded bodies
 
 
-//app.use(cors({origin: 'http://localhost:8100', allowedHeaders: ['Content-Type', 'Accept', 'x-access-token']}));
+
+
+app.use(cors({origin: 'http://localhost:8100', allowedHeaders: ['Content-Type', 'Accept', 'x-access-token']}));
 
 
 //Unprotected routes
