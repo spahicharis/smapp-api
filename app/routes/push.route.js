@@ -32,7 +32,7 @@ module.exports = function(router, connection, mysql, logger) {
             });
         });
     });
-    router.get('/push/send', function (req, res) {
-        helperFunctions.posaljiTestPush(res, logger);
+    router.get('/push/send/:id', function (req, res) {
+        helperFunctions.posaljiTestPush(req.params.id || 1,res, logger);
     });
 };

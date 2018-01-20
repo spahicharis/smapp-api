@@ -53,7 +53,7 @@ function posaljiPush(titleMsg, bodyMsg, senderId, res, logger, id = 0) {
     //device_tokens[0] = "dVL21thex9o:APA91bHLfdit_-NSg_v1rpNyN3RqJU1J0EKDXj8GD5QfboJmIWXpF4pdSR95K0JQIqKII5FUp-sqMmQQdz5batCmvN-YqThmRbxRG4hjbjjbRgx4K662D1TdxibcYUztPo2whiNL-fhk";
 }
 
-function posaljiTestPush(res, logger) {
+function posaljiTestPush(id, res, logger) {
 
     const device_tokens = []; //create array for storing device tokens
     const retry_times = 4; //the number of times to retry sending the message if it fails
@@ -70,7 +70,7 @@ function posaljiTestPush(res, logger) {
 
     logger.info("Sending test push");
     // get users from db
-    let query = "SELECT * FROM ?? WHERE idkorisnici=1";
+    let query = "SELECT * FROM ?? WHERE idkorisnici=" + id;
     const table = ["korisnici"];
     query = mysql.format(query, table);
     connection.query(query, function (err, rows) {
