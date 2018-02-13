@@ -62,7 +62,7 @@ function posaljiTestPush(id, res, logger) {
     message.addData('title', 'SMApp notification');
     message.addData('message', 'It works :)');
     message.addData('sound', 'default');
-    message.addData('color', '#60D4AF');
+    message.addData('color', '#3F3250');
     message.collapseKey = 'SMApp aktivnosti'; //grouping messages
     message.delayWhileIdle = true; //delay sending while receiving device is offline
     message.timeToLive = 300000; //number of seconds to keep the message on
