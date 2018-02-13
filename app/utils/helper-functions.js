@@ -13,7 +13,7 @@ function posaljiPush(titleMsg, bodyMsg, senderId, res, logger, id = 0) {
     message.addData('title', titleMsg);
     message.addData('message', bodyMsg);
     message.addData('sound', 'default');
-    message.addData('color', '#60D4AF');
+    message.addData('color', '#3F3250');
     message.addData('icon', 'icon.png'); 
     message.addData('click_action', id);        
     message.addData('tag', id);
