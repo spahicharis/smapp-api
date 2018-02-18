@@ -30,11 +30,11 @@ function prepareMessage(tip, artikal) {
         case 'statusChange':
             msg.body = artikal.kolicina + 'x ' + artikal.tip + ' za ' + artikal.imeprezime + ' po cijeni od ' + artikal.cijena + ' KM';
             if (artikal.status === 'Prodano') {
-                msg.title = "Status artikla je promijenjen u 'Prodano'";
+                msg.title = "Novi status: Prodano";
             } else if (artikal.status === 'Poslano') {
-                msg.title = "Status artikla je promijenjen u 'Poslano'";
+                msg.title = "Novi status: Poslano";
             } else {
-                msg.title = "Status artikla je promijenjen u 'Vraćeno'";
+                msg.title = "Novi status: Vraćeno";
             }
             break;
     }
@@ -546,6 +546,8 @@ module.exports = function (router, connection, mysql, logger) {
         logger.info('PUT /artikli/' + req.params.idprodaja + "/status");
         const now = moment(new Date());
         const date = now.format("YYYY-MM-DD HH:mm:ss");
+
+        req.body.artikal.status = req.body.status;
 
         models.Artikal.update({status: req.body.status, datumizmjene: date}, {where: {idprodaja: req.params.idprodaja}})
             .then(function (artikal) {
