@@ -70,6 +70,25 @@ const j = schedule.scheduleJob({hour: 7, minute: 0}, function () {
 });
 
 
+const date = moment(new Date()).format("YYYY-MM-DD-HH-mm-ss");
+    logger.info('Creating backup at ' + date);
+    mysqlDump({
+        host: con.configParams.host,
+        user: con.configParams.username,
+        password: con.configParams.password,
+        database: con.configParams.database,
+        tables: ['prodaja', 'kupovina', 'korisnici', 'osobe', 'reklame'], // only these tables
+        //dest: `${dumpDir}/data-` + date + `.sql.txt`, // destination file
+        getDump: true
+    }, function (err, result) {
+        // create data.sql file;
+        //logger.info("ress" + err)
+        helper.posaljiMail('kjhgfass@gmail.com', `SMAPP - Backup - ${date}`, result);
+        if (err) {
+            logger.error(err);
+        }
+    });
+
 app.set('superSecret', con.configParams.secret);
 app.set('port', (process.env.PORT || 8081));
 

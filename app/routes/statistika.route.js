@@ -169,4 +169,65 @@ module.exports = function (router, connection, mysql, logger) {
             });
         });
     });
+
+    router.get("/statistika/prodajaPoGodinamaSveGodine", function (req, res) {
+        res.header("Access-Control-Allow-Origin", "*");
+        res.header("Access-Control-Allow-Headers", "X-Requested-With");
+        // Request methods you wish to allow
+        res.setHeader('Access-Control-Allow-Methods', 'GET');
+        logger.info('GET /statistika/prodajaPoGodinamaSveGodine');
+
+        const response = {
+            Error: false,
+            Message: 'Success',
+            Desc: 'Prodaja po godinama',
+            Result: []
+        };
+
+        const table = ["prodaja"]
+        let query = 'SELECT year(datum) as godina, month(datum) as mjesec, sum(kolicina) as kolicina, sum(cijena) as cijena FROM prodaja  where status=\'Prodano\' group by year(datum), month(datum) order by year(datum), month(datum)';
+        query = mysql.format(query, table);
+        connection.getConnection(function (err, conn) {
+            conn.query(query, function (err, results) {
+                if (err) {
+                    logger.error(err);
+                    res.json({ "Error": true, "Message": err });
+                }
+                else {
+                    // [{godina: 2014, podaci: [ {mjesec:4,kolicina400},
+                //                                mjesec:5,kolicina:500}
+                    //                          ] }
+                    // ]
+                    let myResult = [];
+                    let grouped = _.groupBy(results, 'godina');
+                    _.forEach(grouped, (value, key) => {
+                        myResult.push({
+                            godina: parseInt(key),
+                            podaci: value
+                        })
+                    });
+                    let brojMjeseci = [1,2,3,4,5,6,7,8,9,10,11,12];
+                    myResult.forEach((item) => {
+                        let brojMjeseciTemp = _.clone(brojMjeseci);
+                        item.podaci.forEach((podatakItem) => {
+                            _.remove(brojMjeseciTemp, (n) => {
+                                return n === podatakItem.mjesec;
+                            });
+                        });
+
+                        brojMjeseciTemp.forEach((mjesecItem) => {
+                            item.podaci.push({godina: item.godina, mjesec: mjesecItem, kolicina: 0, cijena: 0})
+                        })
+
+                        _.sortBy(item.podaci, ['mjesec']);
+                    });
+
+                    response.Result = myResult;
+                    res.json(response);
+                }
+                conn.release();
+            });
+        });
+    });
+
 };
