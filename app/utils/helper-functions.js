@@ -3,23 +3,32 @@ const mysql = require("mysql");
 const con = require('../config/db_conf.js');
 const connection = con.connection();
 
+const messageOptions = {
+    // collapseKey: 'SMApp aktivnosti',
+    delayWhileIdle: true, //delay sending while receiving device is offline
+}
 
 function posaljiPush(titleMsg, bodyMsg, senderId, res, logger, id = 0) {
 
     const device_tokens = []; //create array for storing device tokens
     const retry_times = 4; //the number of times to retry sending the message if it fails
     const sender = new gcm.Sender(con.getGcmKey()); //create a new sender
-    const message = new gcm.Message(); //create a new message
-    message.addData('title', titleMsg);
-    message.addData('message', bodyMsg);
-    message.addData('sound', 'default');
-    message.addData('color', '#3F3250');
-    message.addData('icon', 'icon.png'); 
-    message.addData('click_action', id);        
-    message.addData('tag', id);
-    message.delayWhileIdle = true; //delay sending while receiving device is offline
-    message.timeToLive = 300000; //number of seconds to keep the message on
-    //server if the device is offline
+
+    const m = Object.assign({
+        "data": {
+            "title": titleMsg,
+            "body": bodyMsg,
+            "notId": id,
+            "surveyID": "ewtawgreg-gragrag-rgarhthgbad",
+            "priority": "high",
+            "sound":"default",
+            "click_action": id,
+            "color":"#3F3250"
+        }
+    }, messageOptions);
+
+    const message = new gcm.Message(m); //create a new message
+   
 
     logger.info("Sending push");
 
@@ -58,14 +67,25 @@ function posaljiTestPush(id, res, logger) {
     const device_tokens = []; //create array for storing device tokens
     const retry_times = 4; //the number of times to retry sending the message if it fails
     const sender = new gcm.Sender(con.getGcmKey()); //create a new sender
-    const message = new gcm.Message(); //create a new message
-    message.addData('title', 'SMApp notification');
-    message.addData('message', 'It works :)');
-    message.addData('sound', 'default');
-    message.addData('color', '#3F3250');
-    message.collapseKey = 'SMApp aktivnosti'; //grouping messages
-    message.delayWhileIdle = true; //delay sending while receiving device is offline
-    message.timeToLive = 300000; //number of seconds to keep the message on
+
+    const m = Object.assign({
+        "data": {
+            "title": "SMAPP Test Notification",
+            "body": "Radiiii ! :)",
+            "notId": 1,
+            "surveyID": "ewtawgreg-gragrag-rgarhthgbad",
+            "priority": "high"
+        }
+    }, messageOptions);
+
+    const message = new gcm.Message(m); //create a new message
+    // message.addData('title', 'SMApp notification');
+    // message.addData('message', 'It works :)');
+    // message.addData('sound', 'default');
+    // message.addData('color', '#3F3250');
+    // message.addData('forceStart', '1');
+    // message.addData('priority', 'high');
+
     //server if the device is offline
 
     logger.info("Sending test push");
