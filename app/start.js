@@ -17,16 +17,16 @@ const schedule = require('node-schedule');
 const moment = require("moment");
 const mysqlDump = require('mysqldump');
 const helper = require('./utils/helper-functions');
-const cors = require('cors'); 
+const cors = require('cors');
 
 app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({extended: false})); // support encoded bodies
- 
+app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
+
 // Create the log directory if it does not exist
 if (!fs.existsSync(logDir)) {
     fs.mkdirSync(logDir);
 }
- 
+
 if (!fs.existsSync(dumpDir)) {
     fs.mkdirSync(dumpDir);
 }
@@ -48,7 +48,7 @@ const logger = new (winston.Logger)({
     ]
 });
 
-const j = schedule.scheduleJob({hour: 7, minute: 0}, function () {
+const j = schedule.scheduleJob({ hour: 7, minute: 0 }, function () {
     const date = moment(new Date()).format("YYYY-MM-DD-HH-mm-ss");
     logger.info('Creating backup at ' + date);
     mysqlDump({
@@ -71,31 +71,49 @@ const j = schedule.scheduleJob({hour: 7, minute: 0}, function () {
 
 
 const date = moment(new Date()).format("YYYY-MM-DD-HH-mm-ss");
-    logger.info('Creating backup at ' + date);
-    mysqlDump({
-        host: con.configParams.host,
-        user: con.configParams.username,
-        password: con.configParams.password,
-        database: con.configParams.database,
-        tables: ['prodaja', 'kupovina', 'korisnici', 'osobe', 'reklame'], // only these tables
-        //dest: `${dumpDir}/data-` + date + `.sql.txt`, // destination file
-        getDump: true
-    }, function (err, result) {
-        // create data.sql file;
-        //logger.info("ress" + err)
-        helper.posaljiMail('kjhgfass@gmail.com', `SMAPP - Backup - ${date}`, result);
-        if (err) {
-            logger.error(err);
-        }
-    });
+logger.info('Creating backup at ' + date);
+mysqlDump({
+    host: con.configParams.host,
+    user: con.configParams.username,
+    password: con.configParams.password,
+    database: con.configParams.database,
+    tables: ['prodaja', 'kupovina', 'korisnici', 'osobe', 'reklame'], // only these tables
+    //dest: `${dumpDir}/data-` + date + `.sql.txt`, // destination file
+    getDump: true
+}, function (err, result) {
+    // create data.sql file;
+    //logger.info("ress" + err)
+    helper.posaljiMail('kjhgfass@gmail.com', `SMAPP - Backup - ${date}`, result);
+    if (err) {
+        logger.error(err);
+    }
+});
 
 app.set('superSecret', con.configParams.secret);
 app.set('port', (process.env.PORT || 8081));
 
 
+var whitelist = ['http://localhost:8100', 'http://localhost']
+var corsOptions = {
+    origin: function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    }
+}
 
-
-app.use(cors({origin: 'http://localhost:8100', allowedHeaders: ['Content-Type', 'Accept', 'x-access-token']}));
+app.use(cors({
+    origin: function (origin, callback) {
+        if (whitelist.indexOf(origin) !== -1) {
+            callback(null, true)
+        } else {
+            callback(new Error('Not allowed by CORS'))
+        }
+    },
+    allowedHeaders: ['Content-Type', 'Accept', 'x-access-token', 'X-Requested-With']
+}));
 
 
 //Unprotected routes
@@ -154,5 +172,5 @@ require('./routes')(router, connection, mysql, logger);
 app.use(router);
 
 app.listen(app.get('port'), function () {
-	logger.info('CZOO - Node app is running on port', app.get('port'), ' | MODE: ', env);
+    logger.info('CZOO - Node app is running on port', app.get('port'), ' | MODE: ', env);
 });
