@@ -15,7 +15,9 @@ exports.connection = function () {
         user: 'dslrrwsgdasruayq',
         password: 'zsTwMD6mHH64s3zojLJDrLhUQLU6rNGSFnDWKNCMWngh7X5nHDFkzBvWk7PaS843',
         database: 'db029fa374392e49208be6a53900bb8926',
-        multipleStatements: true
+        multipleStatements: true,
+        queueLimit: 30,
+        acquireTimeout: 1000000
     });
 };
 
@@ -24,7 +26,9 @@ exports.configParams = {
         username: 'dslrrwsgdasruayq',
         password: 'zsTwMD6mHH64s3zojLJDrLhUQLU6rNGSFnDWKNCMWngh7X5nHDFkzBvWk7PaS843',
         database: 'db029fa374392e49208be6a53900bb8926',
-        secret: 'buljakasa'
+        secret: 'buljakasa',
+        queueLimit: 30,
+        acquireTimeout: 1000000
 };
 
 exports.sgkey = function() {

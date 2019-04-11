@@ -8,7 +8,7 @@ const messageOptions = {
     delayWhileIdle: true, //delay sending while receiving device is offline
 }
 
-function posaljiPush(titleMsg, bodyMsg, senderId, res, logger, id = 0) {
+function posaljiPush(titleMsg, bodyMsg, senderId = 1, res, logger, id = 0) {
 
     const device_tokens = []; //create array for storing device tokens
     const retry_times = 4; //the number of times to retry sending the message if it fails

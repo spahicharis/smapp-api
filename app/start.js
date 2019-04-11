@@ -93,27 +93,7 @@ app.set('superSecret', con.configParams.secret);
 app.set('port', (process.env.PORT || 8081));
 
 
-var whitelist = ['http://localhost:8100', 'http://localhost']
-var corsOptions = {
-    origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
-    }
-}
 
-app.use(cors({
-    origin: function (origin, callback) {
-        if (whitelist.indexOf(origin) !== -1) {
-            callback(null, true)
-        } else {
-            callback(new Error('Not allowed by CORS'))
-        }
-    },
-    allowedHeaders: ['Content-Type', 'Accept', 'x-access-token', 'X-Requested-With']
-}));
 
 
 //Unprotected routes
