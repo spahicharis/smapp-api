@@ -56,7 +56,7 @@ const j = schedule.scheduleJob({ hour: 7, minute: 0 }, function () {
         user: con.configParams.username,
         password: con.configParams.password,
         database: con.configParams.database,
-        tables: ['prodaja', 'kupovina', 'korisnici', 'osobe', 'reklame'], // only these tables
+        tables: ['prodaja', 'kupovina', 'korisnici', 'reklame', 'debts'], // only these tables
         //dest: `${dumpDir}/data-` + date + `.sql.txt`, // destination file
         getDump: true
     }, function (err, result) {
@@ -77,7 +77,7 @@ mysqlDump({
     user: con.configParams.username,
     password: con.configParams.password,
     database: con.configParams.database,
-    tables: ['prodaja', 'kupovina', 'korisnici', 'osobe', 'reklame'], // only these tables
+    tables: ['prodaja', 'kupovina', 'korisnici', 'reklame', 'debts'], // only these tables
     //dest: `${dumpDir}/data-` + date + `.sql.txt`, // destination file
     getDump: true
 }, function (err, result) {

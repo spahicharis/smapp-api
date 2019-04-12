@@ -48,8 +48,17 @@ module.exports = function (router, connection, mysql, logger) {
                     ORM: true,
                     Error: false,
                     Message: 'Success',
-                    Data: debts.rows
+                    Data: []
                 };
+
+                debts.rows.forEach(function (item) {
+
+                    let d = item.dataValues;
+                    d.formatted = d.debtor + ' dužan ' + d.creditor + 'u ' + d.debt + ' KM';
+
+                    response.Data.push(d);
+                });
+
                 res.json(response);
             })
             .catch(function (e) {
@@ -110,7 +119,7 @@ module.exports = function (router, connection, mysql, logger) {
                     Data: []
                 };
 
-                const msg = tempData.debtor + ' dužan ' + tempData.creditor + 'u ' + tempData.debt_value;
+                const msg = tempData.debtor + ' dužan ' + tempData.creditor + 'u ' + tempData.debt + ' KM';
                 helperFunctions.posaljiPush('Novo stanje duga',
                     msg,
                     tempData.senderId, res, logger, debt.dataValues.idprodaja);
