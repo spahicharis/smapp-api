@@ -19,6 +19,10 @@ module.exports = function (router, connection, mysql, logger) {
                     Data: []
                 };
                 debts.rows.forEach(function (item) {
+
+                    let d = item.dataValues;
+                    d.formatted = d.debtor + ' dužan ' + d.creditor + 'u ' + d.debt + ' KM';
+                    
                     response.Data.push(item.dataValues);
                 });
                 res.json(response);
