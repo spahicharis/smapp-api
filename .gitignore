@@ -1,3 +1,5 @@
 node_modules
 *.log
 log/results.log
+*.log
+log/results.log

@@ -22,8 +22,8 @@ module.exports = function (router, connection, mysql, logger) {
 
                     let d = item.dataValues;
                     d.formatted = d.debtor + ' dužan ' + d.creditor + 'u ' + d.debt + ' KM';
-                    
-                    response.Data.push(item.dataValues);
+
+                    response.Data.push(d);
                 });
                 res.json(response);
             })
