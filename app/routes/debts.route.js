@@ -9,7 +9,13 @@ module.exports = function (router, connection, mysql, logger) {
         // Request methods you wish to allow
         res.setHeader('Access-Control-Allow-Methods', 'GET');
         logger.info('GET /debts');
-        Debt.findAndCountAll()
+        let searchQuery = {};
+        if(req.query.orderBy) {
+            searchQuery = {
+                order: [['dateCreated', req.query.orderBy]]
+            }
+        }
+        Debt.findAndCountAll(searchQuery)
             .then(function (debts) {
                 const response = {
                     ORM: true,
