@@ -393,9 +393,11 @@ module.exports = function (router, connection, mysql, logger) {
         start_index = (req.params.brojStranice - 1) * req.params.brojItema;
         brojItema = parseInt(req.params.brojItema);
 
+        let orderBy = req.query.orderBy || 'datumizmjene';
+
         models.Artikal.findAll({
             where: {status: 'Prodano'},
-            order: [['datumizmjene', 'DESC'], ['imeprezime']],
+            order: [[orderBy, 'DESC'], ['imeprezime', 'ASC']],
             offset: start_index,
             limit: brojItema
         })
