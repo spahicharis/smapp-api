@@ -115,6 +115,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Accept', 'x-access-token', 'X-Requested-With']
 }));
 
+app.use(cors());
 
 //Unprotected routes
 app.use("/static", express.static(__dirname + '/static'));
