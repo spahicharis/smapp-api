@@ -1,7 +1,7 @@
 const models = require('../models');
 const moment = require("moment");
 
-module.exports = function(router, connection, mysql, logger) {
+module.exports = function (router, connection, mysql, logger) {
     router.get("/paketi/statistika", function (req, res) {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");

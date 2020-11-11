@@ -1,6 +1,6 @@
 const moment = require("moment");
 
-module.exports = function(router, connection, mysql, logger) {
+module.exports = function (router, connection, mysql, logger) {
     router.get("/reklame/", function (req, res, next) {
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");

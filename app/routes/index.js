@@ -9,7 +9,7 @@ const statistika = require('./statistika.route');
 const debts = require('./debts.route');
 
 
-module.exports = function(router, connection, mysql, logger) {
+module.exports = function (router, connection, mysql, logger) {
     auth(router, connection, mysql, logger);
     artikli(router, connection, mysql, logger);
     korisnici(router, connection, mysql, logger);

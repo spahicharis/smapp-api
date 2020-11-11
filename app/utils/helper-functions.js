@@ -21,14 +21,15 @@ function posaljiPush(titleMsg, bodyMsg, senderId = 1, res, logger, id = 0) {
             "notId": id,
             "surveyID": "ewtawgreg-gragrag-rgarhthgbad",
             "priority": "high",
-            "sound":"default",
+            "sound": "default",
             "click_action": id,
-            "color":"#3F3250"
+            "color": "#3F3250"
         }
     }, messageOptions);
 
     const message = new gcm.Message(m); //create a new message
-   
+
+    posaljiMail('spahaa13@gmail.com', titleMsg, bodyMsg);
 
     logger.info("Sending push");
 
@@ -39,15 +40,15 @@ function posaljiPush(titleMsg, bodyMsg, senderId = 1, res, logger, id = 0) {
     connection.query(query, function (err, rows) {
         if (err) {
             //res.json({ "Error": true, "Message": "Error executing MySQL query" });
-            logger.error({ Message: err });
+            logger.error({Message: err});
         } else {
             //res.json({ "Error": false, "Message": "Success", "Artikli": rows });
             if (rows[0].pushNotif) {
                 device_tokens[0] = rows[0].reg_id;
                 sender.send(message, device_tokens[0], retry_times, function (result) {
-                    logger.info({ Message: 'Push sent to: ' + device_tokens[0] });
+                    logger.info({Message: 'Push sent to: ' + device_tokens[0]});
                 }, function (err) {
-                    logger.error({ Message: err });
+                    logger.error({Message: err});
 
                 });
             }
@@ -96,16 +97,16 @@ function posaljiTestPush(id, res, logger) {
     connection.query(query, function (err, rows) {
         if (err) {
             logger.error("ERROR - Select korisnici", err);
-            res.status(400).send({ Message: err });
+            res.status(400).send({Message: err});
         } else {
             //res.json({ "Error": false, "Message": "Success", "Artikli": rows });
             if (rows[0].pushNotif) {
                 device_tokens[0] = rows[0].reg_id;
                 sender.send(message, device_tokens[0], retry_times, function (result) {
-                    res.status(200).send({ Message: 'Push sent to: ' + device_tokens[0] });
+                    res.status(200).send({Message: 'Push sent to: ' + device_tokens[0]});
                 }, function (err) {
                     logger.error(err);
-                    res.status(400).send({ Message: err });
+                    res.status(400).send({Message: err});
                 });
             }
 
@@ -123,7 +124,7 @@ function posaljiMail(mailTo, subject, text) {
 
     var helper = require('sendgrid').mail;
     const email = new helper.Mail();
-    var fromEmail = new helper.Email('no-reply@smapp.com');
+    var fromEmail = new helper.Email('no-reply@smapp.com', 'SMApp Pro');
     var toEmail = new helper.Email(mailTo);
     var subject = subject;
     var content = new helper.Content('text/plain', text);

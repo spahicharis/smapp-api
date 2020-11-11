@@ -69,8 +69,7 @@ module.exports = function (router, connection, mysql, logger) {
                     conn.release();
                 });
             });
-        }
-        else if (req.query.pageSize && req.query.page) {
+        } else if (req.query.pageSize && req.query.page) {
 
             start_index = (req.query.page - 1) * req.query.pageSize;
             brojItema = parseInt(req.query.pageSize);
@@ -106,8 +105,7 @@ module.exports = function (router, connection, mysql, logger) {
                     };
                     res.json(response);
                 });
-        }
-        else if (req.query.searchQuery || req.query.status) {
+        } else if (req.query.searchQuery || req.query.status) {
             models.Artikal.findAndCountAll({
                 where: {
                     status: req.query.status,
@@ -139,8 +137,7 @@ module.exports = function (router, connection, mysql, logger) {
                     };
                     res.json(response);
                 });
-        }
-        else if (req.query.all) {
+        } else if (req.query.all) {
             models.Artikal.findAll({order: [['datum', 'DESC']]})
                 .then(function (artikli) {
                     const response = {
@@ -163,8 +160,7 @@ module.exports = function (router, connection, mysql, logger) {
                     };
                     res.json(response);
                 });
-        }
-        else {
+        } else {
             models.Artikal.findAll({where: {status: ['Poslano', 'Vraceno']}, order: [['datum', 'DESC']]})
                 .then(function (artikli) {
                     const response = {
@@ -252,12 +248,10 @@ module.exports = function (router, connection, mysql, logger) {
                         if (item.tip === 'Trakice') {
                             data.ukupno_prodano_trakica += item.kolicina;
                             data.ukupno_zarada_trakice += item.cijena;
-                        }
-                        else if (item.tip === 'Olovka') {
+                        } else if (item.tip === 'Olovka') {
                             data.ukupno_prodano_olovaka += item.kolicina;
                             data.ukupno_zarada_olovke += item.cijena;
-                        }
-                        else {
+                        } else {
                             data.ukupno_prodano_ostalo += item.kolicina;
                             data.ukupno_zarada_ostalo += item.cijena;
                         }
@@ -276,8 +270,7 @@ module.exports = function (router, connection, mysql, logger) {
                     query3 = "SELECT date_format(datum, '%m.%Y') as datum_, SUM(if(tip='Trakice',kolicina,0)) as prodane_trakica, SUM(if(tip='Trakice',cijena,0)) as cijena_trakica, SUM(if(tip='Olovka',kolicina,0)) as prodane_olovke, SUM(if(tip='Olovka',cijena,0)) as cijena_olovki, SUM(if(tip='Pasta',kolicina,0)) as prodane_paste, SUM(if(tip='Pasta',cijena,0)) as cijena_paste,SUM(if(tip='Ostalo',kolicina,0)) as prodano_ostalo, SUM(if(tip='ostalo',cijena,0)) as cijena_ostalo FROM prodaja WHERE status='Prodano' and Year(datum) = " + connection.escape(req.query.selectedDate.substring(0, 4)) + " and Month(datum)= " + connection.escape(req.query.selectedDate.substring(4)) + " GROUP BY datum_  ORDER BY Year(datum) DESC,Month(datum) DESC;";
                     query4 = "SELECT date_format(datumstizanja, '%m.%Y') as datum_, SUM(if(tip='Trakice',kolicina,0)) as kupljene_trakice, SUM(if(tip='Trakice',cijena,0)) as cijena_kupljenih_trakica, SUM(if(tip='Olovke',kolicina,0)) as kupljene_olovke, SUM(if(tip='Olovke',cijena,0)) as cijena_kupljenih_olovki, SUM(if(tip='Paste',kolicina,0)) as kupljene_paste, SUM(if(tip='Paste',cijena,0)) as cijena_kupljenih_pasti FROM kupovina WHERE status='stigao' and Year(datumstizanja) = " + connection.escape(req.query.selectedDate.substring(0, 4)) + " and Month(datumstizanja)= " + connection.escape(req.query.selectedDate.substring(4)) + " GROUP BY datum_  ORDER BY Year(datumstizanja) DESC,Month(datumstizanja) DESC;";
 
-                }
-                else {
+                } else {
                     query3 = "SELECT date_format(datum, '%m.%Y') as datum_, SUM(if(tip='Trakice',kolicina,0)) as prodane_trakica, SUM(if(tip='Trakice',cijena,0)) as cijena_trakica, SUM(if(tip='Olovka',kolicina,0)) as prodane_olovke, SUM(if(tip='Olovka',cijena,0)) as cijena_olovki, SUM(if(tip='Pasta',kolicina,0)) as prodane_paste, SUM(if(tip='Pasta',cijena,0)) as cijena_paste,SUM(if(tip='Ostalo',kolicina,0)) as prodano_ostalo, SUM(if(tip='ostalo',cijena,0)) as cijena_ostalo FROM prodaja WHERE status='Prodano' GROUP BY datum_  ORDER BY Year(datum) DESC,Month(datum) DESC;";
                     query4 = "SELECT date_format(datumstizanja, '%m.%Y') as datum_, SUM(if(tip='Trakice',kolicina,0)) as kupljene_trakice, SUM(if(tip='Trakice',cijena,0)) as cijena_kupljenih_trakica, SUM(if(tip='Olovke',kolicina,0)) as kupljene_olovke, SUM(if(tip='Olovke',cijena,0)) as cijena_kupljenih_olovki, SUM(if(tip='Paste',kolicina,0)) as kupljene_paste, SUM(if(tip='Paste',cijena,0)) as cijena_kupljenih_pasti FROM kupovina WHERE status='stigao' GROUP BY datum_  ORDER BY Year(datumstizanja) DESC,Month(datumstizanja) DESC;";
 
@@ -295,7 +288,7 @@ module.exports = function (router, connection, mysql, logger) {
                             res.json({"Error": true, "Message": err});
                         } else {
                             response.Data2 = results[0];
-                            const merged = _.map(results[1], function(item) {
+                            const merged = _.map(results[1], function (item) {
                                 return _.assign(item, _.find(results[2], ['datum_', item['datum_']]));
                             });
                             // console.log("mergerLid", mergedList)

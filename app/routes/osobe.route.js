@@ -12,9 +12,9 @@ module.exports = function (router, connection, mysql, logger) {
         connection.query(query, function (err, rows) {
             if (err) {
                 logger.error(err);
-                res.json({ "Error": true, "Message": err });
+                res.json({"Error": true, "Message": err});
             } else {
-                res.json({ "Error": false, "Message": "Success", "Osobe": rows });
+                res.json({"Error": false, "Message": "Success", "Osobe": rows});
             }
             connection.release();
         });
@@ -27,7 +27,7 @@ module.exports = function (router, connection, mysql, logger) {
 
         logger.info("POST OSOBE", req.body);
 
-        
+
         let query = "INSERT INTO ?? (??,??,??) VALUES " +
             "(?,?,?)";
         const table = ["osobe",
@@ -40,13 +40,13 @@ module.exports = function (router, connection, mysql, logger) {
         ];
         query = mysql.format(query, table);
 
-        connection.getConnection(function(err,conn){
+        connection.getConnection(function (err, conn) {
             conn.query(query, function (err, rows) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
+                    res.json({"Error": true, "Message": err});
                 } else {
-                    res.json({ "Error": false, "Message": "Osoba dodana !", "Result": rows });
+                    res.json({"Error": false, "Message": "Osoba dodana !", "Result": rows});
                 }
                 conn.release();
             });
@@ -61,13 +61,13 @@ module.exports = function (router, connection, mysql, logger) {
         const table = ["osobe"];
         query = mysql.format(query, table);
 
-        connection.getConnection(function(err,conn){
+        connection.getConnection(function (err, conn) {
             conn.query(query, function (err, rows) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
+                    res.json({"Error": true, "Message": err});
                 } else {
-                    res.json({ "Error": false, "Message": "Success", "Osobe": rows });
+                    res.json({"Error": false, "Message": "Success", "Osobe": rows});
                 }
                 conn.release();
             });
@@ -81,13 +81,13 @@ module.exports = function (router, connection, mysql, logger) {
         let query = "SELECT * FROM ?? where status = 'inform' order by imeprezime asc ";
         const table = ["osobe"];
         query = mysql.format(query, table);
-        connection.getConnection(function(err,conn){
+        connection.getConnection(function (err, conn) {
             conn.query(query, function (err, rows) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
+                    res.json({"Error": true, "Message": err});
                 } else {
-                    res.json({ "Error": false, "Message": "Success", "Osobe": rows });
+                    res.json({"Error": false, "Message": "Success", "Osobe": rows});
                 }
                 conn.release();
             });
@@ -109,13 +109,13 @@ module.exports = function (router, connection, mysql, logger) {
         ];
         query = mysql.format(query, table);
 
-        connection.getConnection(function(err,conn){
+        connection.getConnection(function (err, conn) {
             conn.query(query, function (err, rows) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
+                    res.json({"Error": true, "Message": err});
                 } else {
-                    res.json({ "Error": false, "Message": "Osoba uspješno ažurirana!" });
+                    res.json({"Error": false, "Message": "Osoba uspješno ažurirana!"});
                 }
                 conn.release();
             });
@@ -132,13 +132,13 @@ module.exports = function (router, connection, mysql, logger) {
         ];
         query = mysql.format(query, table);
 
-        connection.getConnection(function(err,conn){
+        connection.getConnection(function (err, conn) {
             conn.query(query, function (err, rows) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
+                    res.json({"Error": true, "Message": err});
                 } else {
-                    res.json({ "Error": false, "Message": "Osoba uspješno obrisana!" });
+                    res.json({"Error": false, "Message": "Osoba uspješno obrisana!"});
                 }
                 conn.release();
             });

@@ -1,8 +1,6 @@
-const models = require('../models');
-const moment = require("moment");
 const _ = require('lodash');
-const helperFunctions = require('../utils/helper-functions');
-const sequelize = require('sequelize');
+const request = require('request');
+
 module.exports = function (router, connection, mysql, logger) {
     router.get("/statistika/kupovinaPoGodinama", function (req, res) {
         res.header("Access-Control-Allow-Origin", "*");
@@ -19,15 +17,14 @@ module.exports = function (router, connection, mysql, logger) {
         };
 
         const table = ["kupovina"]
-        let query = 'SELECT YEAR(datumkupovine) as godina, sum(cijena) as cijena, sum(kolicina) as kolicina, count(status) as brojKupovina FROM kupovina WHERE status = '+"'stigao'"+'  group by year(datumkupovine);'
+        let query = 'SELECT YEAR(datumkupovine) as godina, sum(cijena) as cijena, sum(kolicina) as kolicina, count(status) as brojKupovina FROM kupovina WHERE status = ' + "'stigao'" + '  group by year(datumkupovine);'
         query = mysql.format(query, table);
         connection.getConnection(function (err, conn) {
             conn.query(query, function (err, results) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
-                }
-                else {
+                    res.json({"Error": true, "Message": err});
+                } else {
                     response.Result = results;
                     res.json(response);
                 }
@@ -51,15 +48,14 @@ module.exports = function (router, connection, mysql, logger) {
         };
 
         const table = ["kupovina"]
-        let query = 'SELECT year(datumkupovine) as godina, month(datumkupovine) as mjesec, sum(cijena) as cijena, sum(kolicina) as kolicina, count(status) as brojKupovina FROM kupovina WHERE status = '+"'stigao'"+'  group by year(datumkupovine),month(datumkupovine);'
+        let query = 'SELECT year(datumkupovine) as godina, month(datumkupovine) as mjesec, sum(cijena) as cijena, sum(kolicina) as kolicina, count(status) as brojKupovina FROM kupovina WHERE status = ' + "'stigao'" + '  group by year(datumkupovine),month(datumkupovine);'
         query = mysql.format(query, table);
         connection.getConnection(function (err, conn) {
             conn.query(query, function (err, results) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
-                }
-                else {
+                    res.json({"Error": true, "Message": err});
+                } else {
                     response.Result = results;
                     res.json(response);
                 }
@@ -84,15 +80,14 @@ module.exports = function (router, connection, mysql, logger) {
         };
 
         const table = ["prodaja"]
-        let query = 'SELECT YEAR(datum) as godina, sum(cijena) as cijena, count(status) as brojProdaja FROM prodaja WHERE status = '+"'Prodano'"+'  group by year(datum);'
+        let query = 'SELECT YEAR(datum) as godina, sum(cijena) as cijena, count(status) as brojProdaja FROM prodaja WHERE status = ' + "'Prodano'" + '  group by year(datum);'
         query = mysql.format(query, table);
         connection.getConnection(function (err, conn) {
             conn.query(query, function (err, results) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
-                }
-                else {
+                    res.json({"Error": true, "Message": err});
+                } else {
                     response.Result = results;
                     res.json(response);
                 }
@@ -117,15 +112,14 @@ module.exports = function (router, connection, mysql, logger) {
         };
 
         const table = ["prodaja"]
-        let query = 'SELECT YEAR(datum) as godina, month(datum) as mjesec, sum(cijena) as cijena, count(status) as brojProdaja FROM prodaja WHERE status = '+"'Prodano'"+'  group by year(datum), month(datum);'
+        let query = 'SELECT YEAR(datum) as godina, month(datum) as mjesec, sum(cijena) as cijena, count(status) as brojProdaja FROM prodaja WHERE status = ' + "'Prodano'" + '  group by year(datum), month(datum);'
         query = mysql.format(query, table);
         connection.getConnection(function (err, conn) {
             conn.query(query, function (err, results) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
-                }
-                else {
+                    res.json({"Error": true, "Message": err});
+                } else {
                     response.Result = results;
                     res.json(response);
                 }
@@ -159,10 +153,9 @@ module.exports = function (router, connection, mysql, logger) {
             conn.query(query + query2 + query3, function (err, results) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
-                }
-                else {
-                    response.Result = [Object.assign({}, results[0][0], results[1][0], results[2][0],{zarada: results[1][0].prodano - (results[0][0].kupljeno + results[2][0].cijenaReklama)})];
+                    res.json({"Error": true, "Message": err});
+                } else {
+                    response.Result = [Object.assign({}, results[0][0], results[1][0], results[2][0], {zarada: results[1][0].prodano - (results[0][0].kupljeno + results[2][0].cijenaReklama)})];
                     res.json(response);
                 }
                 conn.release();
@@ -191,11 +184,10 @@ module.exports = function (router, connection, mysql, logger) {
             conn.query(query, function (err, results) {
                 if (err) {
                     logger.error(err);
-                    res.json({ "Error": true, "Message": err });
-                }
-                else {
+                    res.json({"Error": true, "Message": err});
+                } else {
                     // [{godina: 2014, podaci: [ {mjesec:4,kolicina400},
-                //                                mjesec:5,kolicina:500}
+                    //                                mjesec:5,kolicina:500}
                     //                          ] }
                     // ]
                     let myResult = [];
@@ -206,7 +198,7 @@ module.exports = function (router, connection, mysql, logger) {
                             podaci: value
                         })
                     });
-                    let brojMjeseci = [1,2,3,4,5,6,7,8,9,10,11,12];
+                    let brojMjeseci = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
                     myResult.forEach((item) => {
                         let brojMjeseciTemp = _.clone(brojMjeseci);
                         item.podaci.forEach((podatakItem) => {
@@ -229,5 +221,4 @@ module.exports = function (router, connection, mysql, logger) {
             });
         });
     });
-
 };

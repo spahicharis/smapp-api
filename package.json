@@ -1,7 +1,7 @@
 {
-  "name": "SMApp-HSDESIGN ",
+  "name": "smapp-api",
   "version": "1.0.0",
-  "description": "HSDESIGN SMAPP",
+  "description": "HS Development",
   "keywords": [
     "OpenShift",
     "Node.js",
@@ -14,10 +14,6 @@
     "url": "http://prodajacrest.xyz"
   },
   "homepage": "http://prodajacrest.xyz/",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/openshift/origin-server"
-  },
   "private": true,
   "engines": {
     "node": "8.4.0",
@@ -37,6 +33,7 @@
     "node-gcm": "^1.0.2",
     "node-schedule": "^1.2.0",
     "path": "^0.12.7",
+    "request": "^2.88.2",
     "sendgrid": "^5.2.1",
     "sequelize": "^3.28.0",
     "sequelize-cli": "^2.5.1",
@@ -47,7 +44,8 @@
   },
   "bundleDependencies": [],
   "scripts": {
-    "start": "node app/start.js"
+    "start": "node app/start.js",
+    "start:dev": "nodemon app/start.js"
   },
   "main": "./app/start.js"
 }

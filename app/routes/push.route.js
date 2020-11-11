@@ -1,13 +1,15 @@
 const express = require('express');
 const helperFunctions = require('../utils/helper-functions.js');
 const _ = require('lodash');
-module.exports = function(router, connection, mysql, logger) {
+module.exports = function (router, connection, mysql, logger) {
     router.get('/push/', function (req, res) {
         res.send("This is basic route");
     });
     router.put('/push/register/:id', function (req, res) {
 
-        if(_.isEmpty(req.body))  {return res.status(400).json({"Message": "Body is empty :)"});}
+        if (_.isEmpty(req.body)) {
+            return res.status(400).json({"Message": "Body is empty :)"});
+        }
         res.header("Access-Control-Allow-Origin", "*");
         res.header("Access-Control-Allow-Headers", "X-Requested-With");
         // Request methods you wish to allow
@@ -33,6 +35,6 @@ module.exports = function(router, connection, mysql, logger) {
         });
     });
     router.get('/push/send/:id', function (req, res) {
-        helperFunctions.posaljiTestPush(req.params.id || 1,res, logger);
+        helperFunctions.posaljiTestPush(req.params.id || 1, res, logger);
     });
 };

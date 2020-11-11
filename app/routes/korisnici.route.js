@@ -44,7 +44,7 @@ module.exports = function (router, connection, mysql, logger) {
                     Message: 'Success',
                     Users: []
                 };
-                if(korisnik)
+                if (korisnik)
                     response.Users.push(korisnik.dataValues);
                 res.json(response);
             })
@@ -64,14 +64,14 @@ module.exports = function (router, connection, mysql, logger) {
         // Request methods you wish to allow
         res.setHeader('Access-Control-Allow-Methods', 'POST');
         logger.info('POST /korisnici');
-        models.Korisnik.findOne({where:{ime:req.body.ime,sifra:req.body.sifra}})
+        models.Korisnik.findOne({where: {ime: req.body.ime, sifra: req.body.sifra}})
             .then(function (korisnik) {
                 const response = {
                     Error: false,
                     Message: 'Success',
                     Users: []
                 };
-                if(korisnik)
+                if (korisnik)
                     response.Users.push(korisnik.dataValues);
                 res.json(response);
             })
@@ -100,9 +100,9 @@ module.exports = function (router, connection, mysql, logger) {
         connection.query(query, function (err, rows) {
             if (err) {
                 logger.error(err);
-                res.json({ "Error": true, "Message": err });
+                res.json({"Error": true, "Message": err});
             } else {
-                res.json({ "Error": false, "Message": "Korisnik izmijenjen!" });
+                res.json({"Error": false, "Message": "Korisnik izmijenjen!"});
             }
             connection.release();
         });
@@ -121,9 +121,9 @@ module.exports = function (router, connection, mysql, logger) {
         connection.query(query, function (err, rows) {
             if (err) {
                 logger.error(err);
-                res.json({ "Error": true, "Message": err });
+                res.json({"Error": true, "Message": err});
             } else {
-                res.json({ "Error": false, "Message": "Osoba uspješno ažurirana!" });
+                res.json({"Error": false, "Message": "Osoba uspješno ažurirana!"});
             }
             connection.release();
         });
