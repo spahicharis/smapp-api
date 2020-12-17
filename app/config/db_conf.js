@@ -11,6 +11,7 @@ exports.getGcmKey = function () {
 exports.connection = function () {
     return mysql.createPool({
         connectionLimit: 10,
+        host: 'localhost',
         user: 'autokemo_smappuser',
         password: '1Spahaa.',
         database: 'autokemo_smapp',
