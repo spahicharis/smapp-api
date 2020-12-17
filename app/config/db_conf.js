@@ -10,11 +10,10 @@ exports.getGcmKey = function () {
 };
 exports.connection = function () {
     return mysql.createPool({
-        connectionLimit:10,
-        host: '029fa374-392e-4920-8be6-a53900bb8926.mysql.sequelizer.com',
-        user: 'dslrrwsgdasruayq',
-        password: 'zsTwMD6mHH64s3zojLJDrLhUQLU6rNGSFnDWKNCMWngh7X5nHDFkzBvWk7PaS843',
-        database: 'db029fa374392e49208be6a53900bb8926',
+        connectionLimit: 10,
+        user: 'autokemo_smappuser',
+        password: '1Spahaa.',
+        database: 'autokemo_smapp',
         multipleStatements: true,
         queueLimit: 30,
         acquireTimeout: 1000000
@@ -22,15 +21,15 @@ exports.connection = function () {
 };
 
 exports.configParams = {
-        host: '029fa374-392e-4920-8be6-a53900bb8926.mysql.sequelizer.com',
-        username: 'dslrrwsgdasruayq',
-        password: 'zsTwMD6mHH64s3zojLJDrLhUQLU6rNGSFnDWKNCMWngh7X5nHDFkzBvWk7PaS843',
-        database: 'db029fa374392e49208be6a53900bb8926',
-        secret: 'buljakasa',
-        queueLimit: 30,
-        acquireTimeout: 1000000
+    host: 'localhost',
+    username: 'autokemo_smappuser',
+    password: '1Spahaa.',
+    database: 'autokemo_smapp',
+    secret: 'buljakasa',
+    queueLimit: 30,
+    acquireTimeout: 1000000
 };
 
-exports.sgkey = function() {
+exports.sgkey = function () {
     return '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';
 }
